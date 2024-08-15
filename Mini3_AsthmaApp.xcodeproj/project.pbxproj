@@ -1,0 +1,1026 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCB878B02C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878AF2C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift */; };
+		DCB878B22C6DF1B200A88AAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878B12C6DF1B200A88AAD /* ContentView.swift */; };
+		DCB878B42C6DF1B400A88AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB878B32C6DF1B400A88AAD /* Assets.xcassets */; };
+		DCB878B72C6DF1B400A88AAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB878B62C6DF1B400A88AAD /* Preview Assets.xcassets */; };
+		DCB878C12C6DF1B400A88AAD /* Mini3_AsthmaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878C02C6DF1B400A88AAD /* Mini3_AsthmaAppTests.swift */; };
+		DCB878CB2C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878CA2C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.swift */; };
+		DCB878CD2C6DF1B400A88AAD /* Mini3_AsthmaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878CC2C6DF1B400A88AAD /* Mini3_AsthmaAppUITestsLaunchTests.swift */; };
+		DCB878D32C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCB878D22C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCB878D82C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878D72C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift */; };
+		DCB878DA2C6DF1B400A88AAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878D92C6DF1B400A88AAD /* ContentView.swift */; };
+		DCB878DC2C6DF1B500A88AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB878DB2C6DF1B500A88AAD /* Assets.xcassets */; };
+		DCB878DF2C6DF1B500A88AAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB878DE2C6DF1B500A88AAD /* Preview Assets.xcassets */; };
+		DCB878E92C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878E82C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppTests.swift */; };
+		DCB878F32C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878F22C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift */; };
+		DCB878F52C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878F42C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCB878BD2C6DF1B400A88AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB878A42C6DF1B200A88AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB878AB2C6DF1B200A88AAD;
+			remoteInfo = Mini3_AsthmaApp;
+		};
+		DCB878C72C6DF1B400A88AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB878A42C6DF1B200A88AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB878AB2C6DF1B200A88AAD;
+			remoteInfo = Mini3_AsthmaApp;
+		};
+		DCB878D42C6DF1B400A88AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB878A42C6DF1B200A88AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB878D12C6DF1B400A88AAD;
+			remoteInfo = "Mini3_AsthmaApp Watch App";
+		};
+		DCB878E52C6DF1B500A88AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB878A42C6DF1B200A88AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB878D12C6DF1B400A88AAD;
+			remoteInfo = "Mini3_AsthmaApp Watch App";
+		};
+		DCB878EF2C6DF1B500A88AAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCB878A42C6DF1B200A88AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCB878D12C6DF1B400A88AAD;
+			remoteInfo = "Mini3_AsthmaApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCB878FB2C6DF1B500A88AAD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCB878D32C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCB878AC2C6DF1B200A88AAD /* Mini3_AsthmaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mini3_AsthmaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB878AF2C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaAppApp.swift; sourceTree = "<group>"; };
+		DCB878B12C6DF1B200A88AAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCB878B32C6DF1B400A88AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCB878B62C6DF1B400A88AAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCB878BC2C6DF1B400A88AAD /* Mini3_AsthmaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mini3_AsthmaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB878C02C6DF1B400A88AAD /* Mini3_AsthmaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaAppTests.swift; sourceTree = "<group>"; };
+		DCB878C62C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mini3_AsthmaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB878CA2C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaAppUITests.swift; sourceTree = "<group>"; };
+		DCB878CC2C6DF1B400A88AAD /* Mini3_AsthmaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DCB878D22C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini3_AsthmaApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB878D72C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaAppApp.swift; sourceTree = "<group>"; };
+		DCB878D92C6DF1B400A88AAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCB878DB2C6DF1B500A88AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCB878DE2C6DF1B500A88AAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCB878E42C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini3_AsthmaApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB878E82C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaApp_Watch_AppTests.swift; sourceTree = "<group>"; };
+		DCB878EE2C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini3_AsthmaApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB878F22C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaApp_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		DCB878F42C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCB878A92C6DF1B200A88AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878B92C6DF1B400A88AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878C32C6DF1B400A88AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878CF2C6DF1B400A88AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878E12C6DF1B500A88AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878EB2C6DF1B500A88AAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCB878A32C6DF1B200A88AAD = {
+			isa = PBXGroup;
+			children = (
+				DCB878AE2C6DF1B200A88AAD /* Mini3_AsthmaApp */,
+				DCB878BF2C6DF1B400A88AAD /* Mini3_AsthmaAppTests */,
+				DCB878C92C6DF1B400A88AAD /* Mini3_AsthmaAppUITests */,
+				DCB878D62C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App */,
+				DCB878E72C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppTests */,
+				DCB878F12C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppUITests */,
+				DCB878AD2C6DF1B200A88AAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCB878AD2C6DF1B200A88AAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878AC2C6DF1B200A88AAD /* Mini3_AsthmaApp.app */,
+				DCB878BC2C6DF1B400A88AAD /* Mini3_AsthmaAppTests.xctest */,
+				DCB878C62C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.xctest */,
+				DCB878D22C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App.app */,
+				DCB878E42C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppTests.xctest */,
+				DCB878EE2C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCB878AE2C6DF1B200A88AAD /* Mini3_AsthmaApp */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878AF2C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift */,
+				DCB878B12C6DF1B200A88AAD /* ContentView.swift */,
+				DCB878B32C6DF1B400A88AAD /* Assets.xcassets */,
+				DCB878B52C6DF1B400A88AAD /* Preview Content */,
+			);
+			path = Mini3_AsthmaApp;
+			sourceTree = "<group>";
+		};
+		DCB878B52C6DF1B400A88AAD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878B62C6DF1B400A88AAD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCB878BF2C6DF1B400A88AAD /* Mini3_AsthmaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878C02C6DF1B400A88AAD /* Mini3_AsthmaAppTests.swift */,
+			);
+			path = Mini3_AsthmaAppTests;
+			sourceTree = "<group>";
+		};
+		DCB878C92C6DF1B400A88AAD /* Mini3_AsthmaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878CA2C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.swift */,
+				DCB878CC2C6DF1B400A88AAD /* Mini3_AsthmaAppUITestsLaunchTests.swift */,
+			);
+			path = Mini3_AsthmaAppUITests;
+			sourceTree = "<group>";
+		};
+		DCB878D62C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878D72C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift */,
+				DCB878D92C6DF1B400A88AAD /* ContentView.swift */,
+				DCB878DB2C6DF1B500A88AAD /* Assets.xcassets */,
+				DCB878DD2C6DF1B500A88AAD /* Preview Content */,
+			);
+			path = "Mini3_AsthmaApp Watch App";
+			sourceTree = "<group>";
+		};
+		DCB878DD2C6DF1B500A88AAD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878DE2C6DF1B500A88AAD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCB878E72C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878E82C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppTests.swift */,
+			);
+			path = "Mini3_AsthmaApp Watch AppTests";
+			sourceTree = "<group>";
+		};
+		DCB878F12C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB878F22C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift */,
+				DCB878F42C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Mini3_AsthmaApp Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCB878AB2C6DF1B200A88AAD /* Mini3_AsthmaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB878FC2C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaApp" */;
+			buildPhases = (
+				DCB878A82C6DF1B200A88AAD /* Sources */,
+				DCB878A92C6DF1B200A88AAD /* Frameworks */,
+				DCB878AA2C6DF1B200A88AAD /* Resources */,
+				DCB878FB2C6DF1B500A88AAD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB878D52C6DF1B400A88AAD /* PBXTargetDependency */,
+			);
+			name = Mini3_AsthmaApp;
+			productName = Mini3_AsthmaApp;
+			productReference = DCB878AC2C6DF1B200A88AAD /* Mini3_AsthmaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCB878BB2C6DF1B400A88AAD /* Mini3_AsthmaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB878FF2C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaAppTests" */;
+			buildPhases = (
+				DCB878B82C6DF1B400A88AAD /* Sources */,
+				DCB878B92C6DF1B400A88AAD /* Frameworks */,
+				DCB878BA2C6DF1B400A88AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB878BE2C6DF1B400A88AAD /* PBXTargetDependency */,
+			);
+			name = Mini3_AsthmaAppTests;
+			productName = Mini3_AsthmaAppTests;
+			productReference = DCB878BC2C6DF1B400A88AAD /* Mini3_AsthmaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCB878C52C6DF1B400A88AAD /* Mini3_AsthmaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB879022C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaAppUITests" */;
+			buildPhases = (
+				DCB878C22C6DF1B400A88AAD /* Sources */,
+				DCB878C32C6DF1B400A88AAD /* Frameworks */,
+				DCB878C42C6DF1B400A88AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB878C82C6DF1B400A88AAD /* PBXTargetDependency */,
+			);
+			name = Mini3_AsthmaAppUITests;
+			productName = Mini3_AsthmaAppUITests;
+			productReference = DCB878C62C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DCB878D12C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB878F82C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaApp Watch App" */;
+			buildPhases = (
+				DCB878CE2C6DF1B400A88AAD /* Sources */,
+				DCB878CF2C6DF1B400A88AAD /* Frameworks */,
+				DCB878D02C6DF1B400A88AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mini3_AsthmaApp Watch App";
+			productName = "Mini3_AsthmaApp Watch App";
+			productReference = DCB878D22C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCB878E32C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB879052C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaApp Watch AppTests" */;
+			buildPhases = (
+				DCB878E02C6DF1B500A88AAD /* Sources */,
+				DCB878E12C6DF1B500A88AAD /* Frameworks */,
+				DCB878E22C6DF1B500A88AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB878E62C6DF1B500A88AAD /* PBXTargetDependency */,
+			);
+			name = "Mini3_AsthmaApp Watch AppTests";
+			productName = "Mini3_AsthmaApp Watch AppTests";
+			productReference = DCB878E42C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCB878ED2C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB879082C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaApp Watch AppUITests" */;
+			buildPhases = (
+				DCB878EA2C6DF1B500A88AAD /* Sources */,
+				DCB878EB2C6DF1B500A88AAD /* Frameworks */,
+				DCB878EC2C6DF1B500A88AAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB878F02C6DF1B500A88AAD /* PBXTargetDependency */,
+			);
+			name = "Mini3_AsthmaApp Watch AppUITests";
+			productName = "Mini3_AsthmaApp Watch AppUITests";
+			productReference = DCB878EE2C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCB878A42C6DF1B200A88AAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					DCB878AB2C6DF1B200A88AAD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					DCB878BB2C6DF1B400A88AAD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DCB878AB2C6DF1B200A88AAD;
+					};
+					DCB878C52C6DF1B400A88AAD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DCB878AB2C6DF1B200A88AAD;
+					};
+					DCB878D12C6DF1B400A88AAD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					DCB878E32C6DF1B500A88AAD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DCB878D12C6DF1B400A88AAD;
+					};
+					DCB878ED2C6DF1B500A88AAD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DCB878D12C6DF1B400A88AAD;
+					};
+				};
+			};
+			buildConfigurationList = DCB878A72C6DF1B200A88AAD /* Build configuration list for PBXProject "Mini3_AsthmaApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCB878A32C6DF1B200A88AAD;
+			productRefGroup = DCB878AD2C6DF1B200A88AAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCB878AB2C6DF1B200A88AAD /* Mini3_AsthmaApp */,
+				DCB878BB2C6DF1B400A88AAD /* Mini3_AsthmaAppTests */,
+				DCB878C52C6DF1B400A88AAD /* Mini3_AsthmaAppUITests */,
+				DCB878D12C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App */,
+				DCB878E32C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppTests */,
+				DCB878ED2C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCB878AA2C6DF1B200A88AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB878B72C6DF1B400A88AAD /* Preview Assets.xcassets in Resources */,
+				DCB878B42C6DF1B400A88AAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878BA2C6DF1B400A88AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878C42C6DF1B400A88AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878D02C6DF1B400A88AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB878DF2C6DF1B500A88AAD /* Preview Assets.xcassets in Resources */,
+				DCB878DC2C6DF1B500A88AAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878E22C6DF1B500A88AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878EC2C6DF1B500A88AAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCB878A82C6DF1B200A88AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB878B22C6DF1B200A88AAD /* ContentView.swift in Sources */,
+				DCB878B02C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878B82C6DF1B400A88AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB878C12C6DF1B400A88AAD /* Mini3_AsthmaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878C22C6DF1B400A88AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB878CB2C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.swift in Sources */,
+				DCB878CD2C6DF1B400A88AAD /* Mini3_AsthmaAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878CE2C6DF1B400A88AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB878DA2C6DF1B400A88AAD /* ContentView.swift in Sources */,
+				DCB878D82C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878E02C6DF1B500A88AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB878E92C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCB878EA2C6DF1B500A88AAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB878F32C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift in Sources */,
+				DCB878F52C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCB878BE2C6DF1B400A88AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB878AB2C6DF1B200A88AAD /* Mini3_AsthmaApp */;
+			targetProxy = DCB878BD2C6DF1B400A88AAD /* PBXContainerItemProxy */;
+		};
+		DCB878C82C6DF1B400A88AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB878AB2C6DF1B200A88AAD /* Mini3_AsthmaApp */;
+			targetProxy = DCB878C72C6DF1B400A88AAD /* PBXContainerItemProxy */;
+		};
+		DCB878D52C6DF1B400A88AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB878D12C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App */;
+			targetProxy = DCB878D42C6DF1B400A88AAD /* PBXContainerItemProxy */;
+		};
+		DCB878E62C6DF1B500A88AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB878D12C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App */;
+			targetProxy = DCB878E52C6DF1B500A88AAD /* PBXContainerItemProxy */;
+		};
+		DCB878F02C6DF1B500A88AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCB878D12C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App */;
+			targetProxy = DCB878EF2C6DF1B500A88AAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCB878F62C6DF1B500A88AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCB878F72C6DF1B500A88AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DCB878F92C6DF1B500A88AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jonathan.Mini3-AsthmaApp";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		DCB878FA2C6DF1B500A88AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jonathan.Mini3-AsthmaApp";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		DCB878FD2C6DF1B500A88AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCB878FE2C6DF1B500A88AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCB879002C6DF1B500A88AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini3_AsthmaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mini3_AsthmaApp";
+			};
+			name = Debug;
+		};
+		DCB879012C6DF1B500A88AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini3_AsthmaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mini3_AsthmaApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCB879032C6DF1B500A88AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mini3_AsthmaApp;
+			};
+			name = Debug;
+		};
+		DCB879042C6DF1B500A88AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mini3_AsthmaApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCB879062C6DF1B500A88AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini3_AsthmaApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mini3_AsthmaApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		DCB879072C6DF1B500A88AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini3_AsthmaApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mini3_AsthmaApp Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		DCB879092C6DF1B500A88AAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Mini3_AsthmaApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		DCB8790A2C6DF1B500A88AAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z42WC948D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Mini3_AsthmaApp Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCB878A72C6DF1B200A88AAD /* Build configuration list for PBXProject "Mini3_AsthmaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB878F62C6DF1B500A88AAD /* Debug */,
+				DCB878F72C6DF1B500A88AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB878F82C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB878F92C6DF1B500A88AAD /* Debug */,
+				DCB878FA2C6DF1B500A88AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB878FC2C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB878FD2C6DF1B500A88AAD /* Debug */,
+				DCB878FE2C6DF1B500A88AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB878FF2C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB879002C6DF1B500A88AAD /* Debug */,
+				DCB879012C6DF1B500A88AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB879022C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB879032C6DF1B500A88AAD /* Debug */,
+				DCB879042C6DF1B500A88AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB879052C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaApp Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB879062C6DF1B500A88AAD /* Debug */,
+				DCB879072C6DF1B500A88AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB879082C6DF1B500A88AAD /* Build configuration list for PBXNativeTarget "Mini3_AsthmaApp Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB879092C6DF1B500A88AAD /* Debug */,
+				DCB8790A2C6DF1B500A88AAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCB878A42C6DF1B200A88AAD /* Project object */;
+}
