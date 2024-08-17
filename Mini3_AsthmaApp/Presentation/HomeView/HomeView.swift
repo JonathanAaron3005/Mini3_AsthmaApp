@@ -58,6 +58,7 @@ struct HomeView: View {
             .navigationBarTitle("Mirroring Workout")
             .navigationBarTitleDisplayMode(.inline)
         }
+        //dasda
     }
 }
 
