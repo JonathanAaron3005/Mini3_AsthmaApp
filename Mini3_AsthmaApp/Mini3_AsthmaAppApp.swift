@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Mini3_AsthmaAppApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if UIDevice.current.userInterfaceIdiom == .phone {
+                ContentView()
+            } else {
+                //watch view
+            }
         }
     }
 }

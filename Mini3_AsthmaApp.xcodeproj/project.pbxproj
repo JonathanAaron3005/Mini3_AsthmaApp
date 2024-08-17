@@ -22,6 +22,83 @@
 		DCB878E92C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878E82C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppTests.swift */; };
 		DCB878F32C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878F22C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift */; };
 		DCB878F52C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878F42C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift */; };
+		DCB879102C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8790F2C6DF34100A88AAD /* LocalExerciseRepository.swift */; };
+		DCB879112C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8790F2C6DF34100A88AAD /* LocalExerciseRepository.swift */; };
+		DCB879122C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8790F2C6DF34100A88AAD /* LocalExerciseRepository.swift */; };
+		DCB879132C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8790F2C6DF34100A88AAD /* LocalExerciseRepository.swift */; };
+		DCB879142C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8790F2C6DF34100A88AAD /* LocalExerciseRepository.swift */; };
+		DCB879152C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8790F2C6DF34100A88AAD /* LocalExerciseRepository.swift */; };
+		DCB8791A2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */; };
+		DCB8791B2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */; };
+		DCB8791C2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */; };
+		DCB8791D2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */; };
+		DCB8791E2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */; };
+		DCB8791F2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */; };
+		DCB879232C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879222C6DF69D00A88AAD /* SwiftDataContextManager.swift */; };
+		DCB879242C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879222C6DF69D00A88AAD /* SwiftDataContextManager.swift */; };
+		DCB879252C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879222C6DF69D00A88AAD /* SwiftDataContextManager.swift */; };
+		DCB879262C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879222C6DF69D00A88AAD /* SwiftDataContextManager.swift */; };
+		DCB879272C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879222C6DF69D00A88AAD /* SwiftDataContextManager.swift */; };
+		DCB879282C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879222C6DF69D00A88AAD /* SwiftDataContextManager.swift */; };
+		DCB8792B2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8792A2C6DF73600A88AAD /* ExerciseLocalEntity.swift */; };
+		DCB8792C2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8792A2C6DF73600A88AAD /* ExerciseLocalEntity.swift */; };
+		DCB8792D2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8792A2C6DF73600A88AAD /* ExerciseLocalEntity.swift */; };
+		DCB8792E2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8792A2C6DF73600A88AAD /* ExerciseLocalEntity.swift */; };
+		DCB8792F2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8792A2C6DF73600A88AAD /* ExerciseLocalEntity.swift */; };
+		DCB879302C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8792A2C6DF73600A88AAD /* ExerciseLocalEntity.swift */; };
+		DCB879322C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879312C6DFAED00A88AAD /* UserLocalEntity.swift */; };
+		DCB879332C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879312C6DFAED00A88AAD /* UserLocalEntity.swift */; };
+		DCB879342C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879312C6DFAED00A88AAD /* UserLocalEntity.swift */; };
+		DCB879352C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879312C6DFAED00A88AAD /* UserLocalEntity.swift */; };
+		DCB879362C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879312C6DFAED00A88AAD /* UserLocalEntity.swift */; };
+		DCB879372C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879312C6DFAED00A88AAD /* UserLocalEntity.swift */; };
+		DCB879392C6DFC7500A88AAD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879382C6DFC7500A88AAD /* UserModel.swift */; };
+		DCB8793A2C6DFC7500A88AAD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879382C6DFC7500A88AAD /* UserModel.swift */; };
+		DCB8793B2C6DFC7500A88AAD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879382C6DFC7500A88AAD /* UserModel.swift */; };
+		DCB8793C2C6DFC7500A88AAD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879382C6DFC7500A88AAD /* UserModel.swift */; };
+		DCB8793D2C6DFC7500A88AAD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879382C6DFC7500A88AAD /* UserModel.swift */; };
+		DCB8793E2C6DFC7500A88AAD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879382C6DFC7500A88AAD /* UserModel.swift */; };
+		DCB879402C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8793F2C6E06AD00A88AAD /* LocalUserRepository.swift */; };
+		DCB879412C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8793F2C6E06AD00A88AAD /* LocalUserRepository.swift */; };
+		DCB879422C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8793F2C6E06AD00A88AAD /* LocalUserRepository.swift */; };
+		DCB879432C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8793F2C6E06AD00A88AAD /* LocalUserRepository.swift */; };
+		DCB879442C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8793F2C6E06AD00A88AAD /* LocalUserRepository.swift */; };
+		DCB879452C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8793F2C6E06AD00A88AAD /* LocalUserRepository.swift */; };
+		DCB879472C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879462C6E17B700A88AAD /* DefaultExerciseUseCase.swift */; };
+		DCB879482C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879462C6E17B700A88AAD /* DefaultExerciseUseCase.swift */; };
+		DCB879492C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879462C6E17B700A88AAD /* DefaultExerciseUseCase.swift */; };
+		DCB8794A2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879462C6E17B700A88AAD /* DefaultExerciseUseCase.swift */; };
+		DCB8794B2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879462C6E17B700A88AAD /* DefaultExerciseUseCase.swift */; };
+		DCB8794C2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879462C6E17B700A88AAD /* DefaultExerciseUseCase.swift */; };
+		DCB8794F2C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8794E2C6E182000A88AAD /* DefaultUserUseCase.swift */; };
+		DCB879502C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8794E2C6E182000A88AAD /* DefaultUserUseCase.swift */; };
+		DCB879512C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8794E2C6E182000A88AAD /* DefaultUserUseCase.swift */; };
+		DCB879522C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8794E2C6E182000A88AAD /* DefaultUserUseCase.swift */; };
+		DCB879532C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8794E2C6E182000A88AAD /* DefaultUserUseCase.swift */; };
+		DCB879542C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8794E2C6E182000A88AAD /* DefaultUserUseCase.swift */; };
+		DCB8796B2C6F2F7700A88AAD /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8796A2C6F2F7700A88AAD /* WorkoutManager.swift */; };
+		DCB8796C2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8796A2C6F2F7700A88AAD /* WorkoutManager.swift */; };
+		DCB8796D2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8796A2C6F2F7700A88AAD /* WorkoutManager.swift */; };
+		DCB8796E2C6F2F8000A88AAD /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8796A2C6F2F7700A88AAD /* WorkoutManager.swift */; };
+		DCB8796F2C6F2F8000A88AAD /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8796A2C6F2F7700A88AAD /* WorkoutManager.swift */; };
+		DCB879702C6F2F8100A88AAD /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8796A2C6F2F7700A88AAD /* WorkoutManager.swift */; };
+		DCB879732C6F300C00A88AAD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879722C6F300C00A88AAD /* Logger.swift */; };
+		DCB879742C6F303E00A88AAD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879722C6F300C00A88AAD /* Logger.swift */; };
+		DCB879752C6F303F00A88AAD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879722C6F300C00A88AAD /* Logger.swift */; };
+		DCB879762C6F304000A88AAD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879722C6F300C00A88AAD /* Logger.swift */; };
+		DCB879772C6F304000A88AAD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879722C6F300C00A88AAD /* Logger.swift */; };
+		DCB879782C6F304100A88AAD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879722C6F300C00A88AAD /* Logger.swift */; };
+		DCB8797A2C6F307700A88AAD /* WorkoutManager+watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879792C6F307700A88AAD /* WorkoutManager+watchOS.swift */; };
+		DCB8797D2C6F30A100A88AAD /* WorkoutManager+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8797B2C6F308600A88AAD /* WorkoutManager+iOS.swift */; };
+		DCB879802C6F522E00A88AAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8797F2C6F522E00A88AAD /* HomeView.swift */; };
+		DCB879822C6F525000A88AAD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879812C6F525000A88AAD /* HomeViewModel.swift */; };
+		DCB879852C6F619900A88AAD /* MirroringWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */; };
+		DCB879872C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */; };
+		DCB879892C6F6E1B00A88AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879882C6F6E1B00A88AAD /* AppDelegate.swift */; };
+		DCB8798B2C6F6F1000A88AAD /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8798A2C6F6F1000A88AAD /* ControlsView.swift */; };
+		DCB8798D2C6F6F1D00A88AAD /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8798C2C6F6F1D00A88AAD /* MetricsView.swift */; };
+		DCB8798F2C6F6F2F00A88AAD /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8798E2C6F6F2F00A88AAD /* SummaryView.swift */; };
+		DCB879912C6F7CA200A88AAD /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879902C6F7CA200A88AAD /* ExerciseDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +174,31 @@
 		DCB878EE2C6DF1B500A88AAD /* Mini3_AsthmaApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini3_AsthmaApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB878F22C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaApp_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		DCB878F42C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DCB8790F2C6DF34100A88AAD /* LocalExerciseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalExerciseRepository.swift; sourceTree = "<group>"; };
+		DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		DCB879222C6DF69D00A88AAD /* SwiftDataContextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataContextManager.swift; sourceTree = "<group>"; };
+		DCB8792A2C6DF73600A88AAD /* ExerciseLocalEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLocalEntity.swift; sourceTree = "<group>"; };
+		DCB879312C6DFAED00A88AAD /* UserLocalEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalEntity.swift; sourceTree = "<group>"; };
+		DCB879382C6DFC7500A88AAD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DCB8793F2C6E06AD00A88AAD /* LocalUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUserRepository.swift; sourceTree = "<group>"; };
+		DCB879462C6E17B700A88AAD /* DefaultExerciseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultExerciseUseCase.swift; sourceTree = "<group>"; };
+		DCB8794E2C6E182000A88AAD /* DefaultUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserUseCase.swift; sourceTree = "<group>"; };
+		DCB879552C6F1BA300A88AAD /* Mini3_AsthmaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mini3_AsthmaApp.entitlements; sourceTree = "<group>"; };
+		DCB879682C6F2E3C00A88AAD /* Mini3_AsthmaApp Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mini3_AsthmaApp Watch App.entitlements"; sourceTree = "<group>"; };
+		DCB879692C6F2E5300A88AAD /* Mini3-AsthmaApp-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mini3-AsthmaApp-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DCB8796A2C6F2F7700A88AAD /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		DCB879722C6F300C00A88AAD /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DCB879792C6F307700A88AAD /* WorkoutManager+watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutManager+watchOS.swift"; sourceTree = "<group>"; };
+		DCB8797B2C6F308600A88AAD /* WorkoutManager+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkoutManager+iOS.swift"; sourceTree = "<group>"; };
+		DCB8797F2C6F522E00A88AAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DCB879812C6F525000A88AAD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutView.swift; sourceTree = "<group>"; };
+		DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutViewModel.swift; sourceTree = "<group>"; };
+		DCB879882C6F6E1B00A88AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCB8798A2C6F6F1000A88AAD /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		DCB8798C2C6F6F1D00A88AAD /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		DCB8798E2C6F6F2F00A88AAD /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		DCB879902C6F7CA200A88AAD /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +250,7 @@
 		DCB878A32C6DF1B200A88AAD = {
 			isa = PBXGroup;
 			children = (
+				DCB8790B2C6DF23200A88AAD /* Shared */,
 				DCB878AE2C6DF1B200A88AAD /* Mini3_AsthmaApp */,
 				DCB878BF2C6DF1B400A88AAD /* Mini3_AsthmaAppTests */,
 				DCB878C92C6DF1B400A88AAD /* Mini3_AsthmaAppUITests */,
@@ -174,6 +277,8 @@
 		DCB878AE2C6DF1B200A88AAD /* Mini3_AsthmaApp */ = {
 			isa = PBXGroup;
 			children = (
+				DCB879552C6F1BA300A88AAD /* Mini3_AsthmaApp.entitlements */,
+				DCB8790C2C6DF29400A88AAD /* Presentation */,
 				DCB878AF2C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift */,
 				DCB878B12C6DF1B200A88AAD /* ContentView.swift */,
 				DCB878B32C6DF1B400A88AAD /* Assets.xcassets */,
@@ -210,8 +315,14 @@
 		DCB878D62C6DF1B400A88AAD /* Mini3_AsthmaApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				DCB879692C6F2E5300A88AAD /* Mini3-AsthmaApp-Watch-App-Info.plist */,
+				DCB879682C6F2E3C00A88AAD /* Mini3_AsthmaApp Watch App.entitlements */,
 				DCB878D72C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift */,
+				DCB879882C6F6E1B00A88AAD /* AppDelegate.swift */,
 				DCB878D92C6DF1B400A88AAD /* ContentView.swift */,
+				DCB8798C2C6F6F1D00A88AAD /* MetricsView.swift */,
+				DCB8798A2C6F6F1000A88AAD /* ControlsView.swift */,
+				DCB8798E2C6F6F2F00A88AAD /* SummaryView.swift */,
 				DCB878DB2C6DF1B500A88AAD /* Assets.xcassets */,
 				DCB878DD2C6DF1B500A88AAD /* Preview Content */,
 			);
@@ -241,6 +352,134 @@
 				DCB878F42C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "Mini3_AsthmaApp Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		DCB8790B2C6DF23200A88AAD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879712C6F2FF900A88AAD /* Helpers */,
+				DCB879202C6DF66700A88AAD /* Infrastructure */,
+				DCB879162C6DF39700A88AAD /* Domain */,
+				DCB8790D2C6DF2C900A88AAD /* Data */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DCB8790C2C6DF29400A88AAD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879832C6F618700A88AAD /* MirroringWorkoutView */,
+				DCB8797E2C6F51BA00A88AAD /* HomeView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DCB8790D2C6DF2C900A88AAD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879292C6DF70C00A88AAD /* PersistentStorages */,
+				DCB8790E2C6DF2E700A88AAD /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DCB8790E2C6DF2E700A88AAD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DCB8790F2C6DF34100A88AAD /* LocalExerciseRepository.swift */,
+				DCB8793F2C6E06AD00A88AAD /* LocalUserRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DCB879162C6DF39700A88AAD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879182C6DF3AC00A88AAD /* Entities */,
+				DCB879172C6DF3A700A88AAD /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DCB879172C6DF3A700A88AAD /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879462C6E17B700A88AAD /* DefaultExerciseUseCase.swift */,
+				DCB8794E2C6E182000A88AAD /* DefaultUserUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		DCB879182C6DF3AC00A88AAD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */,
+				DCB879382C6DFC7500A88AAD /* UserModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DCB879202C6DF66700A88AAD /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879562C6F27F000A88AAD /* Managers */,
+				DCB879212C6DF67F00A88AAD /* SwiftData */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		DCB879212C6DF67F00A88AAD /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879222C6DF69D00A88AAD /* SwiftDataContextManager.swift */,
+			);
+			path = SwiftData;
+			sourceTree = "<group>";
+		};
+		DCB879292C6DF70C00A88AAD /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+				DCB8792A2C6DF73600A88AAD /* ExerciseLocalEntity.swift */,
+				DCB879312C6DFAED00A88AAD /* UserLocalEntity.swift */,
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		DCB879562C6F27F000A88AAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DCB8796A2C6F2F7700A88AAD /* WorkoutManager.swift */,
+				DCB879792C6F307700A88AAD /* WorkoutManager+watchOS.swift */,
+				DCB8797B2C6F308600A88AAD /* WorkoutManager+iOS.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DCB879712C6F2FF900A88AAD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879722C6F300C00A88AAD /* Logger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DCB8797E2C6F51BA00A88AAD /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879902C6F7CA200A88AAD /* ExerciseDetailView.swift */,
+				DCB8797F2C6F522E00A88AAD /* HomeView.swift */,
+				DCB879812C6F525000A88AAD /* HomeViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		DCB879832C6F618700A88AAD /* MirroringWorkoutView */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */,
+				DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */,
+			);
+			path = MirroringWorkoutView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,8 +704,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB879322C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
+				DCB879472C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
 				DCB878B22C6DF1B200A88AAD /* ContentView.swift in Sources */,
+				DCB879822C6F525000A88AAD /* HomeViewModel.swift in Sources */,
+				DCB879802C6F522E00A88AAD /* HomeView.swift in Sources */,
+				DCB879392C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878B02C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
+				DCB8796C2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */,
+				DCB8792B2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				DCB879102C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
+				DCB879852C6F619900A88AAD /* MirroringWorkoutView.swift in Sources */,
+				DCB879402C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
+				DCB879912C6F7CA200A88AAD /* ExerciseDetailView.swift in Sources */,
+				DCB879872C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift in Sources */,
+				DCB879742C6F303E00A88AAD /* Logger.swift in Sources */,
+				DCB879232C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
+				DCB8794F2C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
+				DCB8791A2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
+				DCB8797D2C6F30A100A88AAD /* WorkoutManager+iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +731,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB878C12C6DF1B400A88AAD /* Mini3_AsthmaAppTests.swift in Sources */,
+				DCB879482C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
+				DCB8793A2C6DFC7500A88AAD /* UserModel.swift in Sources */,
+				DCB879332C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
+				DCB8796D2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */,
+				DCB8791B2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
+				DCB8792C2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				DCB879752C6F303F00A88AAD /* Logger.swift in Sources */,
+				DCB879502C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
+				DCB879112C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
+				DCB879412C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
+				DCB879242C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,8 +749,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB879342C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
+				DCB879492C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
 				DCB878CB2C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.swift in Sources */,
+				DCB8793B2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878CD2C6DF1B400A88AAD /* Mini3_AsthmaAppUITestsLaunchTests.swift in Sources */,
+				DCB8796E2C6F2F8000A88AAD /* WorkoutManager.swift in Sources */,
+				DCB8792D2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				DCB879122C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
+				DCB879422C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
+				DCB879762C6F304000A88AAD /* Logger.swift in Sources */,
+				DCB879252C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
+				DCB879512C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
+				DCB8791C2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,8 +769,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB879352C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
+				DCB8794A2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
 				DCB878DA2C6DF1B400A88AAD /* ContentView.swift in Sources */,
+				DCB8798D2C6F6F1D00A88AAD /* MetricsView.swift in Sources */,
+				DCB879892C6F6E1B00A88AAD /* AppDelegate.swift in Sources */,
+				DCB8793C2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878D82C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
+				DCB8796B2C6F2F7700A88AAD /* WorkoutManager.swift in Sources */,
+				DCB8792E2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				DCB879132C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
+				DCB879432C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
+				DCB879732C6F300C00A88AAD /* Logger.swift in Sources */,
+				DCB879262C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
+				DCB8798B2C6F6F1000A88AAD /* ControlsView.swift in Sources */,
+				DCB879522C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
+				DCB8791D2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
+				DCB8797A2C6F307700A88AAD /* WorkoutManager+watchOS.swift in Sources */,
+				DCB8798F2C6F6F2F00A88AAD /* SummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +795,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB878E92C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppTests.swift in Sources */,
+				DCB8794B2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
+				DCB8793D2C6DFC7500A88AAD /* UserModel.swift in Sources */,
+				DCB879362C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
+				DCB8796F2C6F2F8000A88AAD /* WorkoutManager.swift in Sources */,
+				DCB8791E2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
+				DCB8792F2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				DCB879772C6F304000A88AAD /* Logger.swift in Sources */,
+				DCB879532C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
+				DCB879142C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
+				DCB879442C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
+				DCB879272C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,8 +813,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB879372C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
+				DCB8794C2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
 				DCB878F32C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift in Sources */,
+				DCB8793E2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878F52C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift in Sources */,
+				DCB879702C6F2F8100A88AAD /* WorkoutManager.swift in Sources */,
+				DCB879302C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				DCB879152C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
+				DCB879452C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
+				DCB879782C6F304100A88AAD /* Logger.swift in Sources */,
+				DCB879282C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
+				DCB879542C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
+				DCB8791F2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +912,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This app would like to access your health data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app would like to access your health data";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -651,6 +970,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This app would like to access your health data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app would like to access your health data";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -663,12 +985,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mini3_AsthmaApp Watch App/Mini3_AsthmaApp Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = Z42WC948D7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mini3-AsthmaApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jonathan.Mini3-AsthmaApp";
@@ -693,12 +1017,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mini3_AsthmaApp Watch App/Mini3_AsthmaApp Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = Z42WC948D7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mini3-AsthmaApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jonathan.Mini3-AsthmaApp";
@@ -725,6 +1051,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mini3_AsthmaApp/Mini3_AsthmaApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp/Preview Content\"";
@@ -758,6 +1085,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mini3_AsthmaApp/Mini3_AsthmaApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp/Preview Content\"";

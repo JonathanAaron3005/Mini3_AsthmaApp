@@ -9,7 +9,9 @@ import SwiftUI
 
 @main
 struct Mini3_AsthmaApp_Watch_AppApp: App {
-    var body: some Scene {
+    @WKApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    
+    @SceneBuilder var body: some Scene {
         WindowGroup {
             ContentView()
         }
