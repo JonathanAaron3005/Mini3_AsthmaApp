@@ -70,6 +70,51 @@ enum ExerciseType: String, Codable, Identifiable{
             return "Medium risk, mixed intensity"
         }
     }
+    
+    var title: String {
+        switch self{
+        case .swimming:
+            return "Swimming"
+        case .running:
+            return "Running"
+        case .walking:
+            return "Walking"
+        case .indoorCycling:
+            return "Indoor Cycling"
+        case .outdoorCycling:
+            return "Outdoor Cycling"
+        }
+    }
+    
+    var icon: String {
+        switch self{
+        case .swimming:
+            return "figure.pool.swim"
+        case .running:
+            return "figure.run"
+        case .walking:
+            return "figure.walk"
+        case .indoorCycling:
+            return "figure.outdoor.cycle"
+        case .outdoorCycling:
+            return "figure.indoor.cycle"
+        }
+    }
+    
+    var iconColor: String {
+        switch self{
+        case .swimming:
+            return "BreatheeeTeal"
+        case .running:
+            return "BreatheeeYellow"
+        case .walking:
+            return "BreatheeePurple"
+        case .indoorCycling:
+            return "BreatheeeCoral"
+        case .outdoorCycling:
+            return "BreatheeeRed"
+        }
+    }
 }
 
 extension HKWorkoutActivityType: Identifiable {
