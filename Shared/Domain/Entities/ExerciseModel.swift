@@ -19,7 +19,8 @@ enum ExerciseType: String, Codable, Identifiable{
     case swimming
     case running
     case walking
-    case cycling
+    case outdoorCycling
+    case indoorCycling
     
     var id: String {
         self.rawValue
@@ -33,16 +34,49 @@ enum ExerciseType: String, Codable, Identifiable{
             return .running
         case .walking:
             return .walking
-        case .cycling:
+        case .outdoorCycling:
+            return .cycling
+        case .indoorCycling:
             return .cycling
         }
     }
+    
+    var imageResource: String {
+        switch self {
+        case .swimming:
+            return "Swimming"
+        case .running:
+            return "Jogging"
+        case .walking:
+            return "Walking"
+        case .indoorCycling:
+            return "Indoor_Cycling"
+        case .outdoorCycling:
+            return "Outdoor_Cycling"
+        }
+    }
+    
+    var description: String {
+        switch self{
+        case .swimming:
+            return "Low risk, low intensity"
+        case .running:
+            return "High risk, medium intensity"
+        case .walking:
+            return "Low risk, low intensity"
+        case .indoorCycling:
+            return "Medium risk, mixed intensity"
+        case .outdoorCycling:
+            return "Medium risk, mixed intensity"
+        }
+    }
 }
+
 extension HKWorkoutActivityType: Identifiable {
     public var id: UInt {
         rawValue
     }
-
+    
     var name: String {
         switch self {
         case .running:

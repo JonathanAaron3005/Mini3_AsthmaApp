@@ -25,7 +25,7 @@ class HomeViewModel: ObservableObject {
     }
     
     func getWorkoutTypes() -> [ExerciseType] {
-        return [.swimming, .running, .cycling, .walking]
+        return [.swimming, .running, .indoorCycling, .outdoorCycling, .walking]
     }
     
     func startWorkout(exerciseType: ExerciseType) {

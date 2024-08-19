@@ -11,7 +11,7 @@ class OnboardingViewModel: ObservableObject {
     
     @Published var isUsingInhaler: Bool = false
     
-    @Published var HRMax: Int?
+    @Published var HRMax: Double?
     
     private let userUseCase: UserUseCase
     
@@ -38,7 +38,6 @@ class OnboardingViewModel: ObservableObject {
     }
     
     func submitAllData() {
-        let age = dob.age()
-        
+        userUseCase.saveUser(dob: dob, severity: severity, totalScore: totalScore, isUsingInhaler: isUsingInhaler, HRMax: HRMax)
     }
 }

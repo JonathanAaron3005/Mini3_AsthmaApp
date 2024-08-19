@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DOBView: View {
-    @State private var dob: Date = Date()
+    @StateObject private var viewModel = OnboardingViewModel(userUseCase: DefaultUserUseCase(userRepo: LocalUserRepository()))
     
     var body: some View {
         NavigationStack {
@@ -17,7 +17,7 @@ struct DOBView: View {
                     .font(.title)
                     .padding()
                 
-                DatePicker("Date of Birth", selection: $dob, displayedComponents: .date)
+                DatePicker("Date of Birth", selection: $viewModel.dob, displayedComponents: .date)
                     .padding()
                 
                 NavigationLink(destination: ACTView()) {
@@ -27,6 +27,9 @@ struct DOBView: View {
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
+                        .onTapGesture {
+                            print(viewModel.dob.age())
+                        }
                 }
                 .padding(.top, 20)
             }
