@@ -39,10 +39,6 @@ class HomeViewModel: ObservableObject {
         print("workout started")
     }
     
-    @MainActor func stopWorkout() {
-        workoutManager.session?.stopActivity(with: .now)
-    }
-    
     @MainActor func isWorkingOut() -> Bool {
         return workoutManager.sessionState.isActive
     }

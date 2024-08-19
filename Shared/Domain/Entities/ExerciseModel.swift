@@ -136,4 +136,19 @@ extension HKWorkoutActivityType: Identifiable {
             return ""
         }
     }
+    
+    var exerciseTypeEquivalent: ExerciseType? {
+            switch self {
+            case .swimming:
+                return .swimming
+            case .running:
+                return .running
+            case .walking:
+                return .walking
+            case .cycling:
+                return .outdoorCycling // Anda dapat memutuskan apakah ini indoor atau outdoor
+            default:
+                return nil
+            }
+        }
 }

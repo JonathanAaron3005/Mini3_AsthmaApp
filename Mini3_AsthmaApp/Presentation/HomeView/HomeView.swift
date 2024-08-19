@@ -29,7 +29,7 @@ struct HomeView: View {
                         selectedExercise = exerciseType
                         viewModel.setSelectedExercise(exerciseType: selectedExercise!.healthKitEquivalent)
                     }) {
-                        Text(exerciseType.rawValue.capitalized)
+                        Text(exerciseType.title)
                     }
                 }
                 

@@ -20,4 +20,16 @@ class MirroringWorkoutViewModel: ObservableObject {
             workoutManager.sessionState == .running ? session.pause() : session.resume()
         }
     }
+    
+    @MainActor func stopWorkout() {
+        workoutManager.session?.stopActivity(with: .now)
+    }
+    
+    @MainActor func isWorkingOut() -> Bool {
+        return workoutManager.sessionState.isActive
+    }
+    
+    @MainActor func getActiveWorkout() -> ExerciseType? {
+        return workoutManager.selectedWorkout?.exerciseTypeEquivalent
+    }
 }

@@ -52,20 +52,6 @@ struct ExerciseDetailView: View {
             }
             .padding(.horizontal)
             
-            Button {
-                viewModel.stopWorkout()
-            } label: {
-                Text("End Workout")
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.green)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            .padding(.horizontal)
-            .padding(.top, 10)
-            .disabled(!viewModel.isWorkingOut())
-            
             Spacer()
         }
     }
