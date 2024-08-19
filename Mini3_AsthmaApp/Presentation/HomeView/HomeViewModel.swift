@@ -16,16 +16,24 @@ class HomeViewModel: ObservableObject {
     private let workoutManager = WorkoutManager.shared
     private let exerciseUseCase: ExerciseUseCase
     
+    @Published var selectedWorkout: ExerciseType?
+    @Published var workoutDuration: Int = 30
+    
     init(exerciseUseCase: ExerciseUseCase) {
         self.exerciseUseCase = exerciseUseCase
     }
     
-    @MainActor func setSelectedExercise(exerciseType: HKWorkoutActivityType){
-        workoutManager.selectedWorkout = exerciseType
+    @MainActor func setSelectedExercise(exerciseType: ExerciseType){
+        selectedWorkout = exerciseType
+        workoutManager.selectedWorkout = exerciseType.healthKitEquivalent
     }
     
     func getWorkoutTypes() -> [ExerciseType] {
         return [.swimming, .running, .indoorCycling, .outdoorCycling, .walking]
+    }
+    
+    func getRecommendedWorkoutTypes() -> [ExerciseType] {
+        return [.swimming, .running, .indoorCycling]
     }
     
     func startWorkout(exerciseType: ExerciseType) {

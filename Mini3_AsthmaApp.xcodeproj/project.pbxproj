@@ -129,6 +129,7 @@
 		DCB879B32C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
 		DCB879B42C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
 		DCB879B52C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
+		DCB879BE2C73995400A88AAD /* SetWorkoutDurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +235,7 @@
 		DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		DCB879A82C70E1A600A88AAD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		DCB879AF2C72FA9100A88AAD /* DOBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBView.swift; sourceTree = "<group>"; };
+		DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetWorkoutDurationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -504,6 +506,7 @@
 		DCB8797E2C6F51BA00A88AAD /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */,
 				DCB879902C6F7CA200A88AAD /* ExerciseDetailView.swift */,
 				DCB8797F2C6F522E00A88AAD /* HomeView.swift */,
 				DCB879812C6F525000A88AAD /* HomeViewModel.swift */,
@@ -763,6 +766,7 @@
 				DCB878B02C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
 				DCB8796C2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */,
 				DCB8792B2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				DCB879BE2C73995400A88AAD /* SetWorkoutDurationView.swift in Sources */,
 				DCB879102C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879852C6F619900A88AAD /* MirroringWorkoutView.swift in Sources */,
 				DCB879402C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,

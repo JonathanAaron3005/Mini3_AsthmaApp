@@ -115,6 +115,21 @@ enum ExerciseType: String, Codable, Identifiable{
             return "BreatheeeRed"
         }
     }
+    
+    var disclaimer: String {
+        switch self{
+        case .swimming:
+            return "Swimming comes with risk. For example, excess chlorine in the water may irritate your airways, thus triggering an asthma. We’ll be with you. Always exercise caution. Get out off the water, in the chance of asthma symptoms."
+        case .running:
+            return ""
+        case .walking:
+            return ""
+        case .indoorCycling:
+            return ""
+        case .outdoorCycling:
+            return ""
+        }
+    }
 }
 
 extension HKWorkoutActivityType: Identifiable {
