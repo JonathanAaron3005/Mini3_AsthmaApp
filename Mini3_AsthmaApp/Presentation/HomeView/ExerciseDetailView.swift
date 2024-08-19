@@ -14,7 +14,7 @@ struct ExerciseDetailView: View {
     @Binding var didStartWorkout: Bool
     
     var body: some View {
-        var manager = WorkoutManager.shared
+        
         VStack {
             HStack {
                 Button(action: {
@@ -38,19 +38,19 @@ struct ExerciseDetailView: View {
             
             Button{
                 if !viewModel.isWorkingOut(){
-                    viewModel.startWorkout()
+                    viewModel.startWorkout(exerciseType: exercise)
                 }
                 didStartWorkout = true
                 dismiss()
             }label: {
                 Text("Start Workout")
-                    .frame(maxWidth: .infinity) // Membuat tombol memenuhi lebar layar
+                    .frame(maxWidth: .infinity)
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
-            .padding(.horizontal) // Memberikan padding di sisi horizontal
+            .padding(.horizontal)
             
             Button {
                 viewModel.stopWorkout()
@@ -63,7 +63,7 @@ struct ExerciseDetailView: View {
                     .cornerRadius(10)
             }
             .padding(.horizontal)
-            .padding(.top, 10) // Memberikan jarak antara tombol End Workout dan Start Workout
+            .padding(.top, 10)
             .disabled(!viewModel.isWorkingOut())
             
             Spacer()

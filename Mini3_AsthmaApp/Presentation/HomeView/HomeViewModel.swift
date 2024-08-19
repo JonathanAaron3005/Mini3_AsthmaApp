@@ -28,10 +28,10 @@ class HomeViewModel: ObservableObject {
         return [.swimming, .running, .cycling, .walking]
     }
     
-    func startWorkout() {
+    func startWorkout(exerciseType: ExerciseType) {
         Task {
             do {
-                try await workoutManager.startWatchWorkout(workoutType: .cycling)
+                try await workoutManager.startWatchWorkout(workoutType: exerciseType.healthKitEquivalent)
             } catch {
                 Logger.shared.log("Failed to start cycling on the paired watch.")
             }
