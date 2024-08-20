@@ -130,6 +130,10 @@
 		DCB879B42C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
 		DCB879B52C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
 		DCB879BE2C73995400A88AAD /* SetWorkoutDurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */; };
+		DCB879C12C747F5A00A88AAD /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */; };
+		DCB879C22C747F7600A88AAD /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */; };
+		DCB879C42C747F9C00A88AAD /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */; };
+		DCB879C52C747FCF00A88AAD /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +240,8 @@
 		DCB879A82C70E1A600A88AAD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		DCB879AF2C72FA9100A88AAD /* DOBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBView.swift; sourceTree = "<group>"; };
 		DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetWorkoutDurationView.swift; sourceTree = "<group>"; };
+		DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsTimelineSchedule.swift; sourceTree = "<group>"; };
+		DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +400,7 @@
 		DCB8790B2C6DF23200A88AAD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DCB879BF2C747F4600A88AAD /* Presentation */,
 				DCB879712C6F2FF900A88AAD /* Helpers */,
 				DCB879202C6DF66700A88AAD /* Infrastructure */,
 				DCB879162C6DF39700A88AAD /* Domain */,
@@ -531,6 +538,15 @@
 				DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */,
 			);
 			path = OnboardingView;
+			sourceTree = "<group>";
+		};
+		DCB879BF2C747F4600A88AAD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */,
+				DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -764,6 +780,7 @@
 				DCB8799B2C70E12C00A88AAD /* ACTView.swift in Sources */,
 				DCB879392C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878B02C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
+				DCB879C12C747F5A00A88AAD /* MetricsTimelineSchedule.swift in Sources */,
 				DCB8796C2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */,
 				DCB8792B2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
 				DCB879BE2C73995400A88AAD /* SetWorkoutDurationView.swift in Sources */,
@@ -779,6 +796,7 @@
 				DCB8794F2C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
 				DCB879A22C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,
 				DCB8791A2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
+				DCB879C42C747F9C00A88AAD /* ElapsedTimeView.swift in Sources */,
 				DCB8797D2C6F30A100A88AAD /* WorkoutManager+iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -838,6 +856,7 @@
 			files = (
 				DCB879352C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
 				DCB8794A2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
+				DCB879C52C747FCF00A88AAD /* ElapsedTimeView.swift in Sources */,
 				DCB878DA2C6DF1B400A88AAD /* ContentView.swift in Sources */,
 				DCB8798D2C6F6F1D00A88AAD /* MetricsView.swift in Sources */,
 				DCB879892C6F6E1B00A88AAD /* AppDelegate.swift in Sources */,
@@ -855,6 +874,7 @@
 				DCB879262C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
 				DCB8798B2C6F6F1000A88AAD /* ControlsView.swift in Sources */,
 				DCB879522C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
+				DCB879C22C747F7600A88AAD /* MetricsTimelineSchedule.swift in Sources */,
 				DCB8791D2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
 				DCB8797A2C6F307700A88AAD /* WorkoutManager+watchOS.swift in Sources */,
 				DCB879A52C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,

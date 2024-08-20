@@ -54,8 +54,8 @@ struct SetWorkoutDurationView: View {
                 
                 HStack {
                     Button(action: {
-                        if viewModel.workoutDuration > 1 {
-                            viewModel.workoutDuration -= 1
+                        if viewModel.workoutDuration > 5 {
+                            viewModel.workoutDuration -= 5
                         }
                     }) {
                         Image(systemName: "minus.circle")
@@ -67,7 +67,7 @@ struct SetWorkoutDurationView: View {
                     Spacer()
                     
                     Button(action: {
-                        viewModel.workoutDuration += 1
+                        viewModel.workoutDuration += 5
                     }) {
                         Image(systemName: "plus.circle")
                             .resizable()
