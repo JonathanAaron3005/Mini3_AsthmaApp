@@ -100,14 +100,6 @@ extension MirroringWorkoutView {
                 .disabled(!viewModel.workoutManager.sessionState.isActive)
 
                 Spacer()
-                
-                Button {
-//                    recordWaterIntake()
-                } label: {
-                    Text("Water")
-                }
-                .tint(.blue)
-                .disabled(!viewModel.workoutManager.sessionState.isActive)
             }
             .buttonStyle(.bordered)
         }
