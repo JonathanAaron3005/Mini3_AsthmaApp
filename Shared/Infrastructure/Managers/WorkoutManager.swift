@@ -20,7 +20,17 @@ class WorkoutManager: NSObject, ObservableObject {
      The workout session live states that the UI observes.
      */
     @Published var sessionState: HKWorkoutSessionState = .notStarted
-    @Published var heartRate: Double = 0
+    @Published var heartRate: Double = 0 {
+        didSet {
+            if (heartRate >= 110) {
+                isAboveHRMax = true
+            } else {
+                isAboveHRMax = false
+            }
+        }
+    }
+    @Published var isAboveHRMax: Bool = false
+    
     @Published var activeEnergy: Double = 0
     @Published var speed: Double = 0
     @Published var power: Double = 0

@@ -8,7 +8,7 @@
 import Foundation
 
 class MirroringWorkoutViewModel: ObservableObject {
-    private let workoutManager = WorkoutManager.shared
+    let workoutManager = WorkoutManager.shared
     private let exerciseUseCase: ExerciseUseCase
     
     init(exerciseUseCase: ExerciseUseCase) {
