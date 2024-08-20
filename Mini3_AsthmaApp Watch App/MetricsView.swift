@@ -9,7 +9,8 @@ import SwiftUI
 import HealthKit
 
 struct MetricsView: View {
-    private var workoutManager = WorkoutManager.shared
+    @ObservedObject private var workoutManager = WorkoutManager.shared
+    @State private var showAlert = false
     
     var body: some View {
         TimelineView(MetricsTimelineSchedule(from: workoutManager.session?.startDate ?? Date(),
@@ -18,12 +19,29 @@ struct MetricsView: View {
                 ElapsedTimeView(elapsedTime: elapsedTime(with: context.date), showSubseconds: context.cadence == .live)
                     .foregroundStyle(.yellow)
                 Text(workoutManager.heartRate.formatted(.number.precision(.fractionLength(0))) + " bpm")
+                
+                if workoutManager.isAboveHRMax {
+                    Text("⚠️ High Heart Rate!")
+                        .foregroundColor(.red)
+                        .onAppear {
+                            showAlert = true
+                        }
+                }
             }
             .font(.system(.title, design: .rounded).monospacedDigit().lowercaseSmallCaps())
             .frame(maxWidth: .infinity, alignment: .leading)
             .ignoresSafeArea(edges: .bottom)
             .scenePadding()
             .padding([.top], 30)
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("High Heart Rate Alert"),
+                    message: Text("Your heart rate is above the maximum limit. Please slow down or take a break."),
+                    dismissButton: .default(Text("OK")) {
+                        showAlert = false
+                    }
+                )
+            }
         }
     }
     

@@ -22,7 +22,7 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var sessionState: HKWorkoutSessionState = .notStarted
     @Published var heartRate: Double = 0 {
         didSet {
-            if (heartRate >= 110) {
+            if (heartRate >= 70) {
                 isAboveHRMax = true
             } else {
                 isAboveHRMax = false
