@@ -17,6 +17,14 @@ class WorkoutPhaseViewModel: ObservableObject {
         self.exerciseUseCase = exerciseUseCase
     }
     
+    @MainActor func finishPhase() {
+        if (selectedPhase != .cooldown) {
+            selectedPhase = selectedPhase.nextPhase
+        } else {
+            workoutManager.session?.stopActivity(with: .now )
+        }
+    }
+    
     @MainActor func togglePause() {
         if let session = workoutManager.session {
             workoutManager.sessionState == .running ? session.pause() : session.resume()

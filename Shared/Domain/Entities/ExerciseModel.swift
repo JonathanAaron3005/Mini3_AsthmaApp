@@ -172,6 +172,14 @@ enum WorkoutPhase {
     case warmup
     case workout
     case cooldown
+    
+    var nextPhase: WorkoutPhase {
+        switch self {
+        case .warmup: return .workout
+        case .workout: return .cooldown
+        case .cooldown: return .cooldown
+        }
+    }
 
     var title: String {
         switch self {
@@ -218,6 +226,22 @@ enum WorkoutPhase {
         case .warmup: return "figure.cooldown"
         case .workout: return ""
         case .cooldown: return "figure.strengthtraining.functional"
+        }
+    }
+    
+    var pauseBtnText: String {
+        switch self {
+        case .warmup: return "warm-up"
+        case .workout: return "exercise"
+        case .cooldown: return "cool-down"
+        }
+    }
+    
+    var endBtnText: String {
+        switch self {
+        case .warmup: return "warming up"
+        case .workout: return "exercising"
+        case .cooldown: return "cooling down"
         }
     }
 }

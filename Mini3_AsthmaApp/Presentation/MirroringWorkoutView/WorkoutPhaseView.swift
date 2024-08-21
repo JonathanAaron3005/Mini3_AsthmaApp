@@ -63,6 +63,7 @@ struct WorkoutPhaseButton: View {
                     .foregroundStyle(.gray.opacity(0.5))
             }
         }
+        .disabled(true)
     }
 }
 

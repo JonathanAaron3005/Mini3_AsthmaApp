@@ -17,6 +17,12 @@ class HomeViewModel: ObservableObject {
     private let exerciseUseCase: ExerciseUseCase
     
     @Published var selectedWorkout: ExerciseType?
+    @Published var errorMessage: String?
+    @Published var workoutDuration = 30 {
+        @MainActor didSet {
+            workoutManager.workoutDuration = workoutDuration
+        }
+    }
     
     init(exerciseUseCase: ExerciseUseCase) {
         self.exerciseUseCase = exerciseUseCase

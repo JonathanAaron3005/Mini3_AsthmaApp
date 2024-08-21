@@ -97,7 +97,7 @@ struct ExerciseDetailView: View {
                             showWorkoutDurationSheet = true
                         }label: {
                             HStack {
-                                Text("\(viewModel.workoutManager.workoutDuration) minutes")
+                                Text("\(viewModel.workoutDuration) minutes")
                                     .font(.body)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                                     .foregroundStyle(.black)

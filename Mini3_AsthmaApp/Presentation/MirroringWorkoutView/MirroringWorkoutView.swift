@@ -72,23 +72,26 @@ struct MirroringWorkoutView: View {
                             viewModel.workoutManager.sessionState == .running ? session.pause() : session.resume()
                         }
                     } label: {
-                        let title = viewModel.workoutManager.sessionState == .running ? "Pause" : "Resume"
-                        let systemImage = viewModel.workoutManager.sessionState == .running ? "pause.fill" : "play.fill"
+                        let isRunning = viewModel.workoutManager.sessionState == .running
+                        let title = isRunning
+                        ? "Pause \(viewModel.selectedPhase.pauseBtnText)"
+                        : "Resume \(viewModel.selectedPhase.pauseBtnText)"
+                        let systemImage = isRunning ? "pause.fill" : "play.fill"
                         HStack {
-                            CustomButton(text: title, color: .yellow.opacity(0.4), image: systemImage)
+                            CustomButton(text: title, color: isRunning ? .yellow.opacity(0.4) : .green.opacity(0.4), image: systemImage)
                                 .padding(.top, 17)
                         }
                     }
-                    .disabled(!viewModel.workoutManager.sessionState.isActive)
+                    .disabled(!viewModel.isWorkingOut())
                     
                     Button {
-                        viewModel.workoutManager.session?.stopActivity(with: .now )
+                        viewModel.finishPhase()
                     } label: {
                         HStack {
-                            CustomButton(text: "End", color: .black.opacity(0.88), image: "stop.fill")
+                            CustomButton(text: "End \(viewModel.selectedPhase.endBtnText)", color: .black.opacity(0.88), image: "stop.fill")
                         }
                     }
-                    .disabled(!viewModel.workoutManager.sessionState.isActive)
+                    .disabled(viewModel.selectedPhase == .cooldown ? !viewModel.isWorkingOut() : false)
                     
                     Button {
                         viewModel.workoutManager.session?.stopActivity(with: .now )
@@ -101,6 +104,7 @@ struct MirroringWorkoutView: View {
                             Text("I need to cancel this exercise")
                                 .foregroundStyle(.black.opacity(0.6))
                                 .padding(.top, 15)
+                                .padding(.bottom, 20)
                         }
                         .navigationBarBackButtonHidden(true)
                         .navigationBarHidden(true)
