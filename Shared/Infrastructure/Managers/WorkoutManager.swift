@@ -20,7 +20,17 @@ class WorkoutManager: NSObject, ObservableObject {
      The workout session live states that the UI observes.
      */
     @Published var sessionState: HKWorkoutSessionState = .notStarted
-    @Published var heartRate: Double = 0
+    @Published var heartRate: Double = 0 {
+        didSet {
+            if (heartRate >= 70) {
+                isAboveHRMax = true
+            } else {
+                isAboveHRMax = false
+            }
+        }
+    }
+    @Published var isAboveHRMax: Bool = false
+    
     @Published var activeEnergy: Double = 0
     @Published var speed: Double = 0
     @Published var power: Double = 0
@@ -28,6 +38,7 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var distance: Double = 0
     @Published var water: Double = 0
     @Published var elapsedTimeInterval: TimeInterval = 0
+    @Published var workoutDuration: Int = 30
     /**
      SummaryView (watchOS) changes from Saving Workout to the metric summary view when
      a workout changes from nil to a valid value.

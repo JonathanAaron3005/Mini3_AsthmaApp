@@ -32,5 +32,17 @@ final class Mini3_AsthmaApp_Watch_AppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+//    func testSelectingAnswer(){
+//        let vm = OnboardingViewModel(userUseCase: <#T##UserUseCase#>)
+//        
+//        vm.selectAnswer(for: 1, optionIndex: 1)
+//        
+//        XCTAssertEqual(vm.selectedAnswers[1], 2)
+//        
+//        XCTAssertTrue(vm.selectedAnswers.count != 0)
+//        
+//        
+//        
+//    }
 }

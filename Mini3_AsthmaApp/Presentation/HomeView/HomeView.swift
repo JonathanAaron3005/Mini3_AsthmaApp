@@ -27,9 +27,9 @@ struct HomeView: View {
                 List(viewModel.getWorkoutTypes(), id: \.self) { exerciseType in
                     Button(action: {
                         selectedExercise = exerciseType
-                        viewModel.setSelectedExercise(exerciseType: selectedExercise!.healthKitEquivalent)
+                        viewModel.setSelectedExercise(exerciseType: selectedExercise!)
                     }) {
-                        Text(exerciseType.rawValue.capitalized)
+                        Text(exerciseType.title)
                     }
                 }
                 
@@ -50,10 +50,10 @@ struct HomeView: View {
                 }
             })
             .sheet(item: $selectedExercise) { exercise in
-                ExerciseDetailView(exercise: exercise, viewModel: viewModel, didStartWorkout: $didStartWorkout)
+                ExerciseDetailView(viewModel: viewModel, didStartWorkout: $didStartWorkout)
             }
             .navigationDestination(isPresented: $didStartWorkout) {
-                MirroringWorkoutView()
+                WorkoutPhaseView()
             }
             .navigationBarTitle("Mirroring Workout")
             .navigationBarTitleDisplayMode(.inline)

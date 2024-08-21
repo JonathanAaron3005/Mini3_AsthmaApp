@@ -13,34 +13,43 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     
-    private let workoutManager = WorkoutManager.shared
+    let workoutManager = WorkoutManager.shared
     private let exerciseUseCase: ExerciseUseCase
+    
+    @Published var selectedWorkout: ExerciseType?
+    @Published var errorMessage: String?
+    @Published var workoutDuration = 30 {
+        @MainActor didSet {
+            workoutManager.workoutDuration = workoutDuration
+        }
+    }
     
     init(exerciseUseCase: ExerciseUseCase) {
         self.exerciseUseCase = exerciseUseCase
     }
     
-    @MainActor func setSelectedExercise(exerciseType: HKWorkoutActivityType){
-        workoutManager.selectedWorkout = exerciseType
+    @MainActor func setSelectedExercise(exerciseType: ExerciseType){
+        selectedWorkout = exerciseType
+        workoutManager.selectedWorkout = exerciseType.healthKitEquivalent
     }
     
     func getWorkoutTypes() -> [ExerciseType] {
-        return [.swimming, .running, .cycling, .walking]
+        return exerciseUseCase.getWorkoutTypes()
     }
     
-    func startWorkout() {
+    func getRecommendedWorkoutTypes() -> [ExerciseType] {
+        return exerciseUseCase.getRecommendedWorkoutTypes()
+    }
+    
+    func startWorkout(exerciseType: ExerciseType) {
         Task {
             do {
-                try await workoutManager.startWatchWorkout(workoutType: .cycling)
+                try await workoutManager.startWatchWorkout(workoutType: exerciseType.healthKitEquivalent)
             } catch {
                 Logger.shared.log("Failed to start cycling on the paired watch.")
             }
         }
         print("workout started")
-    }
-    
-    @MainActor func stopWorkout() {
-        workoutManager.session?.stopActivity(with: .now)
     }
     
     @MainActor func isWorkingOut() -> Bool {
