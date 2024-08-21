@@ -7,9 +7,11 @@
 
 import Foundation
 
-class MirroringWorkoutViewModel: ObservableObject {
+class WorkoutPhaseViewModel: ObservableObject {
     let workoutManager = WorkoutManager.shared
     private let exerciseUseCase: ExerciseUseCase
+    
+    @Published var selectedPhase: WorkoutPhase = .warmup
     
     init(exerciseUseCase: ExerciseUseCase) {
         self.exerciseUseCase = exerciseUseCase

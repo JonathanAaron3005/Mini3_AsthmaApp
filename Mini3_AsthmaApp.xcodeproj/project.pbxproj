@@ -93,7 +93,7 @@
 		DCB879802C6F522E00A88AAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8797F2C6F522E00A88AAD /* HomeView.swift */; };
 		DCB879822C6F525000A88AAD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879812C6F525000A88AAD /* HomeViewModel.swift */; };
 		DCB879852C6F619900A88AAD /* MirroringWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */; };
-		DCB879872C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */; };
+		DCB879872C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879862C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift */; };
 		DCB879892C6F6E1B00A88AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879882C6F6E1B00A88AAD /* AppDelegate.swift */; };
 		DCB8798B2C6F6F1000A88AAD /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8798A2C6F6F1000A88AAD /* ControlsView.swift */; };
 		DCB8798D2C6F6F1D00A88AAD /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8798C2C6F6F1D00A88AAD /* MetricsView.swift */; };
@@ -134,6 +134,9 @@
 		DCB879C22C747F7600A88AAD /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */; };
 		DCB879C42C747F9C00A88AAD /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */; };
 		DCB879C52C747FCF00A88AAD /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */; };
+		DCB879C72C74CA4900A88AAD /* WorkoutPhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C62C74CA4900A88AAD /* WorkoutPhaseView.swift */; };
+		DCB879C92C74ED2100A88AAD /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C82C74ED2100A88AAD /* VisualEffectView.swift */; };
+		DCB879CB2C74F09300A88AAD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879CA2C74F09300A88AAD /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,7 +231,7 @@
 		DCB8797F2C6F522E00A88AAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DCB879812C6F525000A88AAD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutView.swift; sourceTree = "<group>"; };
-		DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutViewModel.swift; sourceTree = "<group>"; };
+		DCB879862C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPhaseViewModel.swift; sourceTree = "<group>"; };
 		DCB879882C6F6E1B00A88AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB8798A2C6F6F1000A88AAD /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		DCB8798C2C6F6F1D00A88AAD /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
@@ -242,6 +245,9 @@
 		DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetWorkoutDurationView.swift; sourceTree = "<group>"; };
 		DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsTimelineSchedule.swift; sourceTree = "<group>"; };
 		DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
+		DCB879C62C74CA4900A88AAD /* WorkoutPhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPhaseView.swift; sourceTree = "<group>"; };
+		DCB879C82C74ED2100A88AAD /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		DCB879CA2C74F09300A88AAD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -504,6 +510,7 @@
 		DCB879712C6F2FF900A88AAD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */,
 				DCB879722C6F300C00A88AAD /* Logger.swift */,
 				DCB879922C70DE3E00A88AAD /* DateExtension.swift */,
 			);
@@ -524,8 +531,9 @@
 		DCB879832C6F618700A88AAD /* MirroringWorkoutView */ = {
 			isa = PBXGroup;
 			children = (
+				DCB879C62C74CA4900A88AAD /* WorkoutPhaseView.swift */,
+				DCB879862C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift */,
 				DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */,
-				DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */,
 			);
 			path = MirroringWorkoutView;
 			sourceTree = "<group>";
@@ -543,8 +551,9 @@
 		DCB879BF2C747F4600A88AAD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */,
 				DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */,
+				DCB879C82C74ED2100A88AAD /* VisualEffectView.swift */,
+				DCB879CA2C74F09300A88AAD /* CustomButton.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -776,19 +785,22 @@
 				DCB879472C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
 				DCB878B22C6DF1B200A88AAD /* ContentView.swift in Sources */,
 				DCB879822C6F525000A88AAD /* HomeViewModel.swift in Sources */,
+				DCB879C92C74ED2100A88AAD /* VisualEffectView.swift in Sources */,
 				DCB879802C6F522E00A88AAD /* HomeView.swift in Sources */,
 				DCB8799B2C70E12C00A88AAD /* ACTView.swift in Sources */,
+				DCB879C72C74CA4900A88AAD /* WorkoutPhaseView.swift in Sources */,
 				DCB879392C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878B02C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
 				DCB879C12C747F5A00A88AAD /* MetricsTimelineSchedule.swift in Sources */,
 				DCB8796C2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */,
 				DCB8792B2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				DCB879CB2C74F09300A88AAD /* CustomButton.swift in Sources */,
 				DCB879BE2C73995400A88AAD /* SetWorkoutDurationView.swift in Sources */,
 				DCB879102C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879852C6F619900A88AAD /* MirroringWorkoutView.swift in Sources */,
 				DCB879402C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
 				DCB879912C6F7CA200A88AAD /* ExerciseDetailView.swift in Sources */,
-				DCB879872C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift in Sources */,
+				DCB879872C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift in Sources */,
 				DCB879B02C72FA9100A88AAD /* DOBView.swift in Sources */,
 				DCB879742C6F303E00A88AAD /* Logger.swift in Sources */,
 				DCB879232C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,

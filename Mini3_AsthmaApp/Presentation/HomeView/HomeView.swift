@@ -53,7 +53,7 @@ struct HomeView: View {
                 ExerciseDetailView(viewModel: viewModel, didStartWorkout: $didStartWorkout)
             }
             .navigationDestination(isPresented: $didStartWorkout) {
-                MirroringWorkoutView()
+                WorkoutPhaseView()
             }
             .navigationBarTitle("Mirroring Workout")
             .navigationBarTitleDisplayMode(.inline)

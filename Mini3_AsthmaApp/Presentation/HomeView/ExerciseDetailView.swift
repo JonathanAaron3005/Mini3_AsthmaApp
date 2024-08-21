@@ -97,7 +97,7 @@ struct ExerciseDetailView: View {
                             showWorkoutDurationSheet = true
                         }label: {
                             HStack {
-                                Text("\(viewModel.workoutDuration ?? 30) minutes")
+                                Text("\(viewModel.workoutManager.workoutDuration) minutes")
                                     .font(.body)
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                                     .foregroundStyle(.black)
@@ -156,13 +156,7 @@ struct ExerciseDetailView: View {
                     didStartWorkout = true
                     dismiss()
                 }label: {
-                    Text("Proceed with warm up")
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity)
-                        .padding(17)
-                        .background(.black.opacity(0.88))
-                        .foregroundColor(.white)
-                        .cornerRadius(25)
+                    CustomButton(text: "Proceed with warm up", color: .black.opacity(0.88))
                 }
             }
             .padding()
@@ -210,10 +204,6 @@ struct ChecklistItemView: View {
     }
 }
 
-struct VisualEffectView: UIViewRepresentable {
-    var effect: UIVisualEffect?
-    func makeUIView(context: UIViewRepresentableContext<Self>) -> UIVisualEffectView { UIVisualEffectView() }
-    func updateUIView(_ uiView: UIVisualEffectView, context: UIViewRepresentableContext<Self>) { uiView.effect = effect }
-}
+
 
 

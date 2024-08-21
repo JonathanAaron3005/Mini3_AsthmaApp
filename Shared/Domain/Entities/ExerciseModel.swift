@@ -153,17 +153,71 @@ extension HKWorkoutActivityType: Identifiable {
     }
     
     var exerciseTypeEquivalent: ExerciseType? {
-            switch self {
-            case .swimming:
-                return .swimming
-            case .running:
-                return .running
-            case .walking:
-                return .walking
-            case .cycling:
-                return .outdoorCycling // Anda dapat memutuskan apakah ini indoor atau outdoor
-            default:
-                return nil
-            }
+        switch self {
+        case .swimming:
+            return .swimming
+        case .running:
+            return .running
+        case .walking:
+            return .walking
+        case .cycling:
+            return .outdoorCycling // Anda dapat memutuskan apakah ini indoor atau outdoor
+        default:
+            return nil
         }
+    }
+}
+
+enum WorkoutPhase {
+    case warmup
+    case workout
+    case cooldown
+
+    var title: String {
+        switch self {
+        case .warmup: return "Warmin' up"
+        case .workout: return "Exercise"
+        case .cooldown: return "Cool Down"
+        }
+    }
+    
+    var aboutTitle: String {
+        switch self {
+        case .warmup: return "ABOUT WARMING UP"
+        case .workout: return "SAFETY IN EXERCISING"
+        case .cooldown: return "ABOUT COOLING DOWN"
+        }
+    }
+    
+    var aboutDescription: String {
+        switch self {
+        case .warmup: return "A good warm-up, according to American Heart Association, may widen your blood vessels. This ensures that your muscles are going to have an adequate supply of oxygen while you’re working out!"
+        case .workout: return "When you have an asthma, or are recovering from an illness, your body are more fragile than it should’ve been. Adding exercise into the mix will put an extra strain on your body."
+        case .cooldown: return "Doing proper cool-down is as important as warming up. The American Heart Association caution against stopping an exercise briefly, because it may cause a light-headedness."
+        }
+    }
+    
+    var description: String {
+        switch self {
+        case .warmup: return "Let's get those muscles ready!"
+        case .workout: return "We're helping you to keep an eye out for any symptoms."
+        case .cooldown: return "You did amazing! Let's end this slowly."
+        }
+    }
+    
+    var step: Int {
+        switch self {
+        case .warmup: return 1
+        case .workout: return 2
+        case .cooldown: return 3
+        }
+    }
+    
+    var icon: String {
+        switch self {
+        case .warmup: return "figure.cooldown"
+        case .workout: return ""
+        case .cooldown: return "figure.strengthtraining.functional"
+        }
+    }
 }

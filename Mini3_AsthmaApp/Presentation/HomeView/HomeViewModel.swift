@@ -13,11 +13,10 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     
-    private let workoutManager = WorkoutManager.shared
+    let workoutManager = WorkoutManager.shared
     private let exerciseUseCase: ExerciseUseCase
     
     @Published var selectedWorkout: ExerciseType?
-    @Published var workoutDuration: Int = 30
     
     init(exerciseUseCase: ExerciseUseCase) {
         self.exerciseUseCase = exerciseUseCase
@@ -29,11 +28,11 @@ class HomeViewModel: ObservableObject {
     }
     
     func getWorkoutTypes() -> [ExerciseType] {
-        return [.swimming, .running, .indoorCycling, .outdoorCycling, .walking]
+        return exerciseUseCase.getWorkoutTypes()
     }
     
     func getRecommendedWorkoutTypes() -> [ExerciseType] {
-        return [.swimming, .running, .indoorCycling]
+        return exerciseUseCase.getRecommendedWorkoutTypes()
     }
     
     func startWorkout(exerciseType: ExerciseType) {

@@ -9,15 +9,32 @@ import SwiftUI
 
 struct ElapsedTimeView: View {
     var elapsedTime: TimeInterval = 0
+    var workoutDuration: TimeInterval
     var showSubseconds = true
     @State private var timeFormatter = ElapsedTimeFormatter()
 
     var body: some View {
-        Text(NSNumber(value: elapsedTime), formatter: timeFormatter)
-            .fontWeight(.semibold)
-            .onChange(of: showSubseconds) { (oldValue, newValue) in
-                timeFormatter.showSubseconds = newValue
-            }
+        VStack {
+
+            ProgressView(value: elapsedTime, total: workoutDuration)
+                .progressViewStyle(LinearProgressViewStyle(tint: progressBarColor))
+                .padding()
+            
+            Text(NSNumber(value: elapsedTime), formatter: timeFormatter)
+                .fontWeight(.semibold)
+                .onChange(of: showSubseconds) { (oldValue, newValue) in
+                    timeFormatter.showSubseconds = newValue
+                }
+        }
+    }
+    
+    private var progressBarColor: Color {
+        switch elapsedTime / workoutDuration {
+        case 1...:
+            return .yellow
+        default:
+            return .green
+        }
     }
 }
 
@@ -48,4 +65,3 @@ class ElapsedTimeFormatter: Formatter {
         return formattedString
     }
 }
-

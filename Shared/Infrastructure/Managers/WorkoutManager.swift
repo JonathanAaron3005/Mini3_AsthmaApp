@@ -38,6 +38,7 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var distance: Double = 0
     @Published var water: Double = 0
     @Published var elapsedTimeInterval: TimeInterval = 0
+    @Published var workoutDuration: Int = 30
     /**
      SummaryView (watchOS) changes from Saving Workout to the metric summary view when
      a workout changes from nil to a valid value.

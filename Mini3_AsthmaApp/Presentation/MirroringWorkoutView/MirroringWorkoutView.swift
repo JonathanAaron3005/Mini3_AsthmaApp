@@ -5,51 +5,120 @@
 //  Created by Jonathan Aaron Wibawa on 16/08/24.
 //
 
-import os
 import SwiftUI
 import HealthKit
 
 struct MirroringWorkoutView: View {
-    @StateObject private var viewModel = MirroringWorkoutViewModel(exerciseUseCase: DefaultExerciseUseCase(exerciseRepo: LocalExerciseRepository()))
-
+    @ObservedObject var viewModel: WorkoutPhaseViewModel
+    
     var body: some View {
-        NavigationStack {
-            let fromDate = viewModel.workoutManager.session?.startDate ?? Date()
-            let schedule = MetricsTimelineSchedule(from: fromDate, isPaused: viewModel.workoutManager.sessionState == .paused)
-            TimelineView(schedule) { context in
-                List {
-                    Section {
-                        metricsView()
-                    } header: {
-                        headerView(context: context)
-                    } footer: {
-                        footerView()
+        ZStack {
+            ScrollView {
+                NavigationStack {
+                    let fromDate = viewModel.workoutManager.session?.startDate ?? Date()
+                    let schedule = MetricsTimelineSchedule(from: fromDate, isPaused: viewModel.workoutManager.sessionState == .paused)
+                    
+                    TimelineView(schedule) { context in
+                        VStack(alignment: .leading) {
+                            VStack(alignment: .leading) {
+                                Image(systemName: viewModel.selectedPhase == .workout
+                                      ? viewModel.workoutManager.selectedWorkout?.exerciseTypeEquivalent?.icon ?? ""
+                                      : viewModel.selectedPhase.icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40)
+                                
+                                Text(viewModel.selectedPhase.title)
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                
+                                Text(viewModel.selectedPhase.description)
+                                    .font(.body)
+                            }
+                            .padding()
+                            
+                            metricsView(viewModel: viewModel)
+                            
+                            ElapsedTimeView(elapsedTime: workoutTimeInterval(context.date), workoutDuration: TimeInterval(viewModel.workoutManager.workoutDuration), showSubseconds: context.cadence == .live)
+                                .font(.system(.title, design: .rounded).monospacedDigit().lowercaseSmallCaps())
+                            
+                            Rectangle()
+                                .frame(maxWidth: .infinity, maxHeight: 0.7)
+                                .opacity(0.6)
+                                .padding()
+                            
+                            VStack(alignment: .leading) {
+                                Text(viewModel.selectedPhase.aboutTitle)
+                                    .foregroundStyle(.gray.opacity(0.8))
+                                    .padding(.bottom, 5)
+                                Text(viewModel.selectedPhase.aboutDescription)
+                                    .font(.body)
+                                    .padding(.bottom, 200)
+                            }
+                            .padding()
+                            
+                        }
+                        .padding()
                     }
                 }
             }
-            .navigationBarTitle("Mirroring Workout")
-            .navigationBarTitleDisplayMode(.inline)
+            
+            NavigationStack {
+                Spacer()
+                
+                VStack {
+                    Button {
+                        if let session = viewModel.workoutManager.session {
+                            viewModel.workoutManager.sessionState == .running ? session.pause() : session.resume()
+                        }
+                    } label: {
+                        let title = viewModel.workoutManager.sessionState == .running ? "Pause" : "Resume"
+                        let systemImage = viewModel.workoutManager.sessionState == .running ? "pause.fill" : "play.fill"
+                        HStack {
+                            CustomButton(text: title, color: .yellow.opacity(0.4), image: systemImage)
+                                .padding(.top, 17)
+                        }
+                    }
+                    .disabled(!viewModel.workoutManager.sessionState.isActive)
+                    
+                    Button {
+                        viewModel.workoutManager.session?.stopActivity(with: .now )
+                    } label: {
+                        HStack {
+                            CustomButton(text: "End", color: .black.opacity(0.88), image: "stop.fill")
+                        }
+                    }
+                    .disabled(!viewModel.workoutManager.sessionState.isActive)
+                    
+                    Button {
+                        viewModel.workoutManager.session?.stopActivity(with: .now )
+                    } label: {
+                        NavigationLink {
+                            HomeView()
+                                .navigationBarBackButtonHidden(true)
+                                .navigationBarHidden(true)
+                        } label: {
+                            Text("I need to cancel this exercise")
+                                .foregroundStyle(.black.opacity(0.6))
+                                .padding(.top, 15)
+                        }
+                        .navigationBarBackButtonHidden(true)
+                        .navigationBarHidden(true)
+                    }
+                }
+                .padding()
+                .background(
+                    VisualEffectView(effect: UIBlurEffect(style: .light))
+                        .ignoresSafeArea()
+                )
+                .frame(maxHeight: .infinity, alignment: .bottom)
+            }
         }
+        .padding(.top, 30)
     }
 }
 
 extension MirroringWorkoutView {
-    @ViewBuilder
-    @MainActor private func headerView(context: TimelineViewDefaultContext) -> some View {
-        VStack {
-            Spacer(minLength: 30)
-            LabeledContent {
-                ElapsedTimeView(elapsedTime: workoutTimeInterval(context.date), showSubseconds: context.cadence == .live)
-                    .font(.system(.title, design: .rounded).monospacedDigit().lowercaseSmallCaps())
-            } label: {
-                Text("Elapsed")
-            }
-            .foregroundColor(.yellow)
-            .font(.system(.title, design: .rounded).monospacedDigit().lowercaseSmallCaps())
-            Spacer(minLength: 15)
-        }
-    }
-    
     @MainActor private func workoutTimeInterval(_ contextDate: Date) -> TimeInterval {
         var timeInterval = viewModel.workoutManager.elapsedTimeInterval
         if viewModel.workoutManager.sessionState == .running {
@@ -68,17 +137,73 @@ extension MirroringWorkoutView {
     }
     
     @ViewBuilder
-    @MainActor private func metricsView() -> some View {
+    @MainActor private func metricsView(viewModel: WorkoutPhaseViewModel) -> some View {
+        let heartRate = viewModel.workoutManager.heartRate
+        let backgroundColor = heartRateBackgroundColor(heartRate: heartRate)
+        let message = heartRateMessage(heartRate: heartRate)
+        
         Group {
-            LabeledContent("Heart Rate", value: viewModel.workoutManager.heartRate, format: .number.precision(.fractionLength(0)))
+            RoundedRectangle(cornerRadius: 10)
+                .fill(backgroundColor)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.black, lineWidth: 1)
+                )
+                .frame(height: 70)
+                .overlay(
+                    HStack{
+                        Image(systemName: "heart")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40)
+                        VStack(alignment: .leading, spacing: -5){
+                            Text("\(Int(heartRate))")
+                                .font(.title)
+                                .fontWeight(.bold)
+                            Text("beats per minute")
+                        }
+                        Spacer()
+                        Text(message)
+                            .font(.title3)
+                            .fontWeight(.bold)
+                    }
+                        .padding()
+                        .foregroundStyle(backgroundColor == .red ? .white : .black)
+                )
+                .padding()
         }
-        .font(.system(.title2, design: .rounded).monospacedDigit().lowercaseSmallCaps())
     }
     
+    private func heartRateBackgroundColor(heartRate: Double) -> Color {
+        switch heartRate {
+        case ..<100:
+            return .white
+        case 100..<140:
+            return .yellow
+        case 140...:
+            return .red
+        default:
+            return .white
+        }
+    }
+    
+    private func heartRateMessage(heartRate: Double) -> String {
+        switch heartRate {
+        case ..<100:
+            return "All good!"
+        case 100..<140:
+            return "Exercise caution"
+        case 140...:
+            return "Wind down, now!"
+        default:
+            return "All good!"
+        }
+    }
+    
+    
     @ViewBuilder
-    @MainActor private func footerView() -> some View {
+    @MainActor private func footerView(viewModel: WorkoutPhaseViewModel) -> some View {
         VStack {
-            Spacer(minLength: 40)
             HStack {
                 Button {
                     if let session = viewModel.workoutManager.session {
@@ -90,7 +215,7 @@ extension MirroringWorkoutView {
                     Text(title)
                 }
                 .disabled(!viewModel.workoutManager.sessionState.isActive)
-
+                
                 Button {
                     viewModel.workoutManager.session?.stopActivity(with: .now )
                 } label: {
@@ -98,10 +223,11 @@ extension MirroringWorkoutView {
                 }
                 .tint(.green)
                 .disabled(!viewModel.workoutManager.sessionState.isActive)
-
+                
                 Spacer()
             }
             .buttonStyle(.bordered)
         }
+        
     }
 }

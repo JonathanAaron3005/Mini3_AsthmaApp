@@ -16,7 +16,7 @@ struct MetricsView: View {
         TimelineView(MetricsTimelineSchedule(from: workoutManager.session?.startDate ?? Date(),
                                              isPaused: workoutManager.sessionState == .paused)) { context in
             VStack(alignment: .leading) {
-                ElapsedTimeView(elapsedTime: elapsedTime(with: context.date), showSubseconds: context.cadence == .live)
+                ElapsedTimeView(elapsedTime: elapsedTime(with: context.date), workoutDuration: TimeInterval(workoutManager.workoutDuration), showSubseconds: context.cadence == .live)
                     .foregroundStyle(.yellow)
                 Text(workoutManager.heartRate.formatted(.number.precision(.fractionLength(0))) + " bpm")
                 
