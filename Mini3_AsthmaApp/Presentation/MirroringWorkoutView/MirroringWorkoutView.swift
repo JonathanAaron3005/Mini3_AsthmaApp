@@ -108,7 +108,7 @@ struct MirroringWorkoutView: View {
                         viewModel.workoutManager.session?.stopActivity(with: .now )
                     } label: {
                         NavigationLink {
-                            HomeView()
+                            NewHomeView()
                                 .navigationBarBackButtonHidden(true)
                                 .navigationBarHidden(true)
                         } label: {

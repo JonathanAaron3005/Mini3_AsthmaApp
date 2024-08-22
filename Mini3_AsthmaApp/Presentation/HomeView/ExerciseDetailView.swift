@@ -47,11 +47,10 @@ struct ExerciseDetailView: View {
                     
                     VStack(alignment: .leading) {
                         Image(systemName: viewModel.selectedWorkout?.icon ?? "figure.pool.swim")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 40)
+                            .font(.title)
                             .padding()
                             .padding(.vertical, 5)
+                            .frame(width: 70, height: 70)
                             .background(Color(viewModel.selectedWorkout?.iconColor ?? "BreatheeeTeal"))
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                         

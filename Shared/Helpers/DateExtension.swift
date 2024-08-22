@@ -14,4 +14,11 @@ extension Date {
         let ageComponents = calendar.dateComponents([.year], from: self, to: now)
         return ageComponents.year ?? 0
     }
+    
+    func stringFormat() -> String {
+        let encoder = DateFormatter()
+        encoder.dateStyle = .long
+        return encoder.string(from: self)
+    }
 }
+

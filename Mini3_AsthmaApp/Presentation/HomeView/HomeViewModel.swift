@@ -13,7 +13,7 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     
-    let workoutManager = WorkoutManager.shared
+    
     private let exerciseUseCase: ExerciseUseCase
     
     @Published var selectedWorkout: ExerciseType?
@@ -58,6 +58,8 @@ class HomeViewModel: ObservableObject {
     @MainActor func retrieveRemoteSession() {
         workoutManager.retrieveRemoteSession()
     }
+    
+    let workoutManager = WorkoutManager.shared
     
     func getHealthStore() -> HKHealthStore {
         return workoutManager.healthStore

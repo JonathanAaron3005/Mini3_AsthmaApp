@@ -1,6 +1,8 @@
 import Foundation
+import HealthKit
 
 class OnboardingViewModel: ObservableObject {
+    let workoutManager = WorkoutManager.shared
     @Published var dob = Date()
     
     @Published var severity: SeverityLevel?
@@ -39,5 +41,17 @@ class OnboardingViewModel: ObservableObject {
     
     func submitAllData() {
         userUseCase.saveUser(dob: dob, severity: severity, totalScore: totalScore, isUsingInhaler: isUsingInhaler, HRMax: HRMax)
+    }
+    
+    func getHealthStore() -> HKHealthStore {
+        return workoutManager.healthStore
+    }
+    
+    func getTypesToShare() -> Set<HKSampleType> {
+        return workoutManager.typesToShare
+    }
+    
+    func getTypesToRead() -> Set<HKObjectType> {
+        return workoutManager.typesToRead
     }
 }

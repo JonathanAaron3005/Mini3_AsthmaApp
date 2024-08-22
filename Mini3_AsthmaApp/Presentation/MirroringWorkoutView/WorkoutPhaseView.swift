@@ -31,7 +31,7 @@ struct WorkoutPhaseView: View {
                 Spacer()
                 
             }
-            .ignoresSafeArea()
+            .ignoresSafeArea(.all)
         }
     }
 }
