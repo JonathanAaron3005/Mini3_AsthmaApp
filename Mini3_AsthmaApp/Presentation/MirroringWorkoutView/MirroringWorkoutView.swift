@@ -10,6 +10,9 @@ import HealthKit
 
 struct MirroringWorkoutView: View {
     @ObservedObject var viewModel: WorkoutPhaseViewModel
+    @State var toggleButtonText : String = "Pause warm-up"
+    @State var toggleButtonIcon : String = "pause.fill"
+    @State var toggleButtonColor : Color = .yellow.opacity(0.4)
     
     var body: some View {
         ZStack {
@@ -17,6 +20,7 @@ struct MirroringWorkoutView: View {
                 NavigationStack {
                     let fromDate = viewModel.workoutManager.session?.startDate ?? Date()
                     let schedule = MetricsTimelineSchedule(from: fromDate, isPaused: viewModel.workoutManager.sessionState == .paused)
+                    let isWorkoutPhase = viewModel.workoutManager.currentPhase == .workout
                     
                     TimelineView(schedule) { context in
                         VStack(alignment: .leading) {
@@ -39,15 +43,16 @@ struct MirroringWorkoutView: View {
                             
                             metricsView(viewModel: viewModel)
                             
-                            ElapsedTimeView(elapsedTime: workoutTimeInterval(context.date), workoutDuration: TimeInterval(viewModel.workoutManager.workoutDuration), showSubseconds: context.cadence == .live)
+                            ElapsedTimeView(elapsedTime: workoutTimeInterval(context.date), workoutDuration: isWorkoutPhase ?  TimeInterval(viewModel.workoutManager.workoutDuration) : TimeInterval(viewModel.workoutManager.currentPhase.duration), showSubseconds: context.cadence == .live)
                                 .font(.system(.title, design: .rounded).monospacedDigit().lowercaseSmallCaps())
-                            
+                           
                             Rectangle()
                                 .frame(maxWidth: .infinity, maxHeight: 0.7)
                                 .opacity(0.6)
                                 .padding()
                             
                             VStack(alignment: .leading) {
+                                Text(viewModel.workoutManager.session?.currentActivity.workoutConfiguration.activityType.name ?? "Unknown Phase")
                                 Text(viewModel.selectedPhase.aboutTitle)
                                     .foregroundStyle(.gray.opacity(0.8))
                                     .padding(.bottom, 5)
@@ -69,29 +74,35 @@ struct MirroringWorkoutView: View {
                 VStack {
                     Button {
                         if let session = viewModel.workoutManager.session {
-                            viewModel.workoutManager.sessionState == .running ? session.pause() : session.resume()
+                            if viewModel.isWorkingOut() {
+                                session.pause()
+                                viewModel.workoutManager.sessionState = .paused
+                                toggleButtonText = "Resume \(viewModel.selectedPhase.pauseBtnText)"
+                                toggleButtonIcon = "play.fill"
+                                toggleButtonColor = .green.opacity(0.4)
+                            } else {
+                                session.resume()
+                                viewModel.workoutManager.sessionState = .running
+                                toggleButtonText = "Pause \(viewModel.selectedPhase.pauseBtnText)"
+                                toggleButtonIcon = "pause.fill"
+                                toggleButtonColor = .yellow.opacity(0.4)
+                            }
                         }
                     } label: {
-                        let isRunning = viewModel.workoutManager.sessionState == .running
-                        let title = isRunning
-                        ? "Pause \(viewModel.selectedPhase.pauseBtnText)"
-                        : "Resume \(viewModel.selectedPhase.pauseBtnText)"
-                        let systemImage = isRunning ? "pause.fill" : "play.fill"
                         HStack {
-                            CustomButton(text: title, color: isRunning ? .yellow.opacity(0.4) : .green.opacity(0.4), image: systemImage)
+                            CustomButton(text: toggleButtonText, color: toggleButtonColor, image: toggleButtonIcon)
                                 .padding(.top, 17)
                         }
                     }
-                    .disabled(!viewModel.isWorkingOut())
+                    
                     
                     Button {
-                        viewModel.finishPhase()
+                        viewModel.startNextPhase()
                     } label: {
                         HStack {
                             CustomButton(text: "End \(viewModel.selectedPhase.endBtnText)", color: .black.opacity(0.88), image: "stop.fill")
                         }
                     }
-                    .disabled(viewModel.selectedPhase == .cooldown ? !viewModel.isWorkingOut() : false)
                     
                     Button {
                         viewModel.workoutManager.session?.stopActivity(with: .now )

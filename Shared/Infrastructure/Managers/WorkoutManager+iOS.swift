@@ -12,9 +12,23 @@ import HealthKit
 // MARK: - Workout session management
 //
 extension WorkoutManager {
+    func startWatchWarmup() async throws {
+        let configuration = HKWorkoutConfiguration()
+        configuration.activityType = .preparationAndRecovery
+        configuration.locationType = .outdoor
+        try await healthStore.startWatchApp(toHandle: configuration)
+    }
     func startWatchWorkout(workoutType: HKWorkoutActivityType) async throws {
+        session?.stopActivity(with: .now)
         let configuration = HKWorkoutConfiguration()
         configuration.activityType = workoutType
+        configuration.locationType = .outdoor
+        try await healthStore.startWatchApp(toHandle: configuration)
+    }
+    func startWatchCoolDown() async throws {
+        session?.stopActivity(with: .now)
+        let configuration = HKWorkoutConfiguration()
+        configuration.activityType = .cooldown
         configuration.locationType = .outdoor
         try await healthStore.startWatchApp(toHandle: configuration)
     }

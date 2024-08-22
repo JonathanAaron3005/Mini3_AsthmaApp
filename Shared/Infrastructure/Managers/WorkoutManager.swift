@@ -39,6 +39,7 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var water: Double = 0
     @Published var elapsedTimeInterval: TimeInterval = 0
     @Published var workoutDuration: Int = 30
+    @Published var currentPhase: WorkoutPhase = .warmup
     /**
      SummaryView (watchOS) changes from Saving Workout to the metric summary view when
      a workout changes from nil to a valid value.
@@ -58,17 +59,17 @@ class WorkoutManager: NSObject, ObservableObject {
     ]
     let healthStore = HKHealthStore()
     var session: HKWorkoutSession?
-    #if os(watchOS)
+#if os(watchOS)
     /**
      The live workout builder that is only available on watchOS.
      */
     var builder: HKLiveWorkoutBuilder?
-    #else
+#else
     /**
      A date for synchronizing the elapsed time between iOS and watchOS.
      */
     var contextDate: Date?
-    #endif
+#endif
     /**
      Creates an async stream that buffers a single newest element, and the stream's continuation to yield new elements synchronously to the stream.
      The Swift actors don't handle tasks in a first-in-first-out way. Use AsyncStream to make sure that the app presents the latest state.
@@ -91,15 +92,48 @@ class WorkoutManager: NSObject, ObservableObject {
             }
         }
     }
+    func startWarmup() {
+        let warmupConfiguration = HKWorkoutConfiguration()
+        warmupConfiguration.activityType = .preparationAndRecovery
+        warmupConfiguration.locationType = .outdoor
+        
+        session?.beginNewActivity(configuration: warmupConfiguration, date: Date(), metadata: nil)
+        currentPhase = .warmup
+    }
+    
+    func startExercise() {
+        if let activity = session?.currentActivity {
+            print("Current activity: \(activity.workoutConfiguration.activityType.name)")
+        } else {
+            print("No current activity")
+        }
+        let exerciseConfiguration = HKWorkoutConfiguration()
+        exerciseConfiguration.activityType = selectedWorkout ?? .swimming
+        exerciseConfiguration.locationType = .outdoor
+        
+        session?.endCurrentActivity(on: Date())
+        session?.beginNewActivity(configuration: exerciseConfiguration, date: Date(), metadata: nil)
+        currentPhase = .workout
+    }
+    
+    func startCooldown() {
+        let cooldownConfiguration = HKWorkoutConfiguration()
+        cooldownConfiguration.activityType = .cooldown
+        cooldownConfiguration.locationType = .outdoor
+        
+        session?.endCurrentActivity(on: Date())
+        session?.beginNewActivity(configuration: cooldownConfiguration, date: Date(), metadata: nil)
+        currentPhase = .cooldown
+    }
     /**
      Consume the session state change from the async stream to update sessionState and finish the workout.
      */
     private func consumeSessionStateChange(_ change: SessionSateChange) async {
         sessionState = change.newState
         /**
-          Wait for the session to transition states before ending the builder.
+         Wait for the session to transition states before ending the builder.
          */
-        #if os(watchOS)
+#if os(watchOS)
         /**
          Send the elapsed time to the iOS side.
          */
@@ -108,11 +142,11 @@ class WorkoutManager: NSObject, ObservableObject {
         if let elapsedTimeData = try? JSONEncoder().encode(elapsedTime) {
             await sendData(elapsedTimeData)
         }
-
+        
         guard change.newState == .stopped, let builder else {
             return
         }
-
+        
         let finishedWorkout: HKWorkout?
         do {
             try await builder.endCollection(at: change.date)
@@ -123,7 +157,7 @@ class WorkoutManager: NSObject, ObservableObject {
             return
         }
         workout = finishedWorkout
-        #endif
+#endif
     }
 }
 
@@ -131,9 +165,9 @@ class WorkoutManager: NSObject, ObservableObject {
 //
 extension WorkoutManager {
     func resetWorkout() {
-        #if os(watchOS)
+#if os(watchOS)
         builder = nil
-        #endif
+#endif
         workout = nil
         session = nil
         activeEnergy = 0
@@ -208,7 +242,7 @@ extension WorkoutManager: HKWorkoutSessionDelegate {
         let sessionSateChange = SessionSateChange(newState: toState, date: date)
         asynStreamTuple.continuation.yield(sessionSateChange)
     }
-        
+    
     nonisolated func workoutSession(_ workoutSession: HKWorkoutSession,
                                     didFailWithError error: Error) {
         Logger.shared.log("\(#function): \(error)")

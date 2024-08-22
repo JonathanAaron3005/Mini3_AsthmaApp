@@ -173,6 +173,13 @@ enum WorkoutPhase {
     case workout
     case cooldown
     
+    var duration: Int {
+        switch self {
+        case .warmup, .cooldown: return 5
+        case .workout: return 30
+        }
+    }
+    
     var nextPhase: WorkoutPhase {
         switch self {
         case .warmup: return .workout
