@@ -22,7 +22,7 @@ struct ContentView: View {
             ControlsView().tag(Tab.controls)
             MetricsView().tag(Tab.metrics)
         }
-        .navigationTitle("\(workoutManager.selectedWorkout?.name ?? "Working Out")")
+        .navigationTitle("Cycling")
         .navigationBarBackButtonHidden(true)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: isLuminanceReduced ? .never : .automatic))
         .onChange(of: isLuminanceReduced) {

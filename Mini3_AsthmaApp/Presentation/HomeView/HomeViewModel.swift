@@ -13,42 +13,34 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     
-    
+    private let workoutManager = WorkoutManager.shared
     private let exerciseUseCase: ExerciseUseCase
-    
-    @Published var selectedWorkout: ExerciseType?
-    @Published var errorMessage: String?
-    @Published var workoutDuration = 30 {
-        @MainActor didSet {
-            workoutManager.workoutDuration = workoutDuration
-        }
-    }
     
     init(exerciseUseCase: ExerciseUseCase) {
         self.exerciseUseCase = exerciseUseCase
     }
     
-    @MainActor func setSelectedExercise(exerciseType: ExerciseType){
-        selectedWorkout = exerciseType
-        workoutManager.selectedWorkout = exerciseType.healthKitEquivalent
+    @MainActor func setSelectedExercise(exerciseType: HKWorkoutActivityType){
+        workoutManager.selectedWorkout = exerciseType
     }
     
     func getWorkoutTypes() -> [ExerciseType] {
-        return exerciseUseCase.getWorkoutTypes()
+        return [.swimming, .running, .cycling, .walking]
     }
     
-    func getRecommendedWorkoutTypes() -> [ExerciseType] {
-        return exerciseUseCase.getRecommendedWorkoutTypes()
-    }
-    
-    func startWarmup() {
+    func startWorkout() {
         Task {
             do {
-                try await workoutManager.startWatchWarmup()
+                try await workoutManager.startWatchWorkout(workoutType: .cycling)
             } catch {
                 Logger.shared.log("Failed to start cycling on the paired watch.")
             }
         }
+        print("workout started")
+    }
+    
+    @MainActor func stopWorkout() {
+        workoutManager.session?.stopActivity(with: .now)
     }
     
     @MainActor func isWorkingOut() -> Bool {
@@ -58,8 +50,6 @@ class HomeViewModel: ObservableObject {
     @MainActor func retrieveRemoteSession() {
         workoutManager.retrieveRemoteSession()
     }
-    
-    let workoutManager = WorkoutManager.shared
     
     func getHealthStore() -> HKHealthStore {
         return workoutManager.healthStore

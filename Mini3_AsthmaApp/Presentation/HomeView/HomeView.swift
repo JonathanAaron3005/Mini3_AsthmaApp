@@ -16,8 +16,8 @@ struct HomeView: View {
     )
     @State private var didStartWorkout = false
     @State private var selectedExercise: ExerciseType?
-    @State private var gotoOnboarding = false
-    @AppStorage("hasDoneOnboarding") private var hasDoneOnboarding: Bool = false
+    
+    @State private var triggerAuthorization = false
     
     var body: some View {
         NavigationStack {
@@ -27,33 +27,36 @@ struct HomeView: View {
                 List(viewModel.getWorkoutTypes(), id: \.self) { exerciseType in
                     Button(action: {
                         selectedExercise = exerciseType
-                        viewModel.setSelectedExercise(exerciseType: selectedExercise!)
+                        viewModel.setSelectedExercise(exerciseType: selectedExercise!.healthKitEquivalent)
                     }) {
-                        Text(exerciseType.title)
+                        Text(exerciseType.rawValue.capitalized)
                     }
                 }
                 
             }
             .onAppear() {
+                triggerAuthorization.toggle()
                 viewModel.retrieveRemoteSession()
             }
+            .healthDataAccessRequest(store: viewModel.getHealthStore(),
+                                     shareTypes: viewModel.getTypesToShare(),
+                                     readTypes: viewModel.getTypesToRead(),
+                                     trigger: triggerAuthorization, completion: { result in
+                switch result {
+                case .success(let success):
+                    print("\(success) for authorization")
+                case .failure(let error):
+                    print("\(error) for authorization")
+                }
+            })
             .sheet(item: $selectedExercise) { exercise in
-                ExerciseDetailView(viewModel: viewModel, didStartWorkout: $didStartWorkout)
+                ExerciseDetailView(exercise: exercise, viewModel: viewModel, didStartWorkout: $didStartWorkout)
             }
             .navigationDestination(isPresented: $didStartWorkout) {
-                WorkoutPhaseView()
+                MirroringWorkoutView()
             }
             .navigationBarTitle("Mirroring Workout")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(isPresented: $gotoOnboarding, destination:{
-                OnboardingView()
-                    .navigationBarBackButtonHidden()
-            })
-            .onAppear{
-                if hasDoneOnboarding == false{
-                    gotoOnboarding = true
-                }
-            }
         }
     }
 }
