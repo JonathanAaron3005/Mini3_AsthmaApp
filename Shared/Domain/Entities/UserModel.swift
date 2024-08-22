@@ -11,7 +11,7 @@ import SwiftData
 internal struct UserModel: Identifiable {
     let id: String
     var age: Int
-    var HRmax: Int
+    var HRmax: Double
     var isUsingInhaler: Bool
     var severityLevel: SeverityLevel?
     var asthmaControl: ACTScore?

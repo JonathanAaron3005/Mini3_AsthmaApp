@@ -15,7 +15,7 @@ class SwiftDataContextManager{
 
     init() {
         do {
-            container = try ModelContainer(for: ExerciseLocalEntity.self)
+            container = try ModelContainer(for: ExerciseLocalEntity.self, UserLocalEntity.self)
             if let container {
                 context = ModelContext(container)
             }
