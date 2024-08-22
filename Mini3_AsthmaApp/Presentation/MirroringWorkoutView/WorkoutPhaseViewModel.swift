@@ -11,23 +11,44 @@ class WorkoutPhaseViewModel: ObservableObject {
     let workoutManager = WorkoutManager.shared
     private let exerciseUseCase: ExerciseUseCase
     
-    @Published var selectedPhase: WorkoutPhase = .warmup
+    @Published var selectedPhase: WorkoutPhase = .warmup {
+        @MainActor didSet {
+            workoutManager.currentPhase = selectedPhase
+        }
+    }
     
     init(exerciseUseCase: ExerciseUseCase) {
         self.exerciseUseCase = exerciseUseCase
     }
     
-    @MainActor func finishPhase() {
-        if (selectedPhase != .cooldown) {
+    @MainActor func startNextPhase() {
+        switch selectedPhase {
+        case .warmup:
             selectedPhase = selectedPhase.nextPhase
-        } else {
-            workoutManager.session?.stopActivity(with: .now )
+            Task {
+                do {
+                    try await workoutManager.startWatchWorkout(workoutType: workoutManager.selectedWorkout ?? .swimming)
+                } catch {
+                    throw(error)
+                }
+            }
+        case .workout:
+            selectedPhase = selectedPhase.nextPhase
+            Task {
+                do {
+                    try await workoutManager.startWatchCoolDown()
+                } catch {
+                    throw(error)
+                }
+            }
+        case .cooldown:
+            stopWorkout()
         }
     }
     
     @MainActor func togglePause() {
         if let session = workoutManager.session {
-            workoutManager.sessionState == .running ? session.pause() : session.resume()
+            workoutManager.session?.state == .running ? session.pause() : session.resume()
         }
     }
     
@@ -36,7 +57,8 @@ class WorkoutPhaseViewModel: ObservableObject {
     }
     
     @MainActor func isWorkingOut() -> Bool {
-        return workoutManager.sessionState.isActive
+        // if there's discrepancy between sessionState and session.state, then it'll default to false.
+        return workoutManager.session?.state == .running && workoutManager.sessionState == .running
     }
     
     @MainActor func getActiveWorkout() -> ExerciseType? {

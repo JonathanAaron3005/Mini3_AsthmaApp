@@ -151,7 +151,7 @@ struct ExerciseDetailView: View {
                 
                 Button{
                     if !viewModel.isWorkingOut(){
-                        viewModel.startWorkout(exerciseType: viewModel.selectedWorkout ?? .swimming)
+                        viewModel.startWarmup()
                     }
                     didStartWorkout = true
                     dismiss()

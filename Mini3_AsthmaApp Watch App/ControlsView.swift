@@ -15,10 +15,10 @@ struct ControlsView: View {
     var body: some View {
         VStack {
             Button {
-                workoutManager.sessionState == .running ? workoutManager.session?.pause() : workoutManager.session?.resume()
+                workoutManager.session?.state == .running ? workoutManager.session?.pause() : workoutManager.session?.resume()
             } label: {
-                let title = workoutManager.sessionState == .running ? "Pause" : "Resume"
-                let systemImage = workoutManager.sessionState == .running ? "pause" : "play"
+                let title = workoutManager.session?.state == .running ? "Pause" : "Resume"
+                let systemImage = workoutManager.session?.state == .running ? "pause" : "play"
                 HStack{
                     Image(systemName: systemImage)
                     Text(title)
@@ -28,7 +28,34 @@ struct ControlsView: View {
             .tint(.blue)
             
             Button {
-                workoutManager.session?.stopActivity(with: .now)
+                switch workoutManager.currentPhase {
+                case .warmup:
+                    Task {
+                        do {
+                            workoutManager.session?.stopActivity(with: .now)
+                            let configuration = HKWorkoutConfiguration()
+                            configuration.activityType = workoutManager.selectedWorkout ?? .swimming
+                            configuration.locationType = .outdoor
+                            try await workoutManager.startWorkout(workoutConfiguration: configuration)
+                        } catch {
+                            Logger.shared.log("Failed started workout")
+                        }
+                    }
+                case .workout:
+                    Task {
+                        do {
+                            workoutManager.session?.stopActivity(with: .now)
+                            let configuration = HKWorkoutConfiguration()
+                            configuration.activityType = .cooldown
+                            configuration.locationType = .outdoor
+                            try await workoutManager.startWorkout(workoutConfiguration: configuration)
+                        } catch {
+                            Logger.shared.log("Failed started cooldown")
+                        }
+                    }
+                case .cooldown:
+                    workoutManager.session?.stopActivity(with: .now)
+                }
             } label: {
                 Text("End")
             }

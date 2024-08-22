@@ -41,15 +41,14 @@ class HomeViewModel: ObservableObject {
         return exerciseUseCase.getRecommendedWorkoutTypes()
     }
     
-    func startWorkout(exerciseType: ExerciseType) {
+    func startWarmup() {
         Task {
             do {
-                try await workoutManager.startWatchWorkout(workoutType: exerciseType.healthKitEquivalent)
+                try await workoutManager.startWatchWarmup()
             } catch {
                 Logger.shared.log("Failed to start cycling on the paired watch.")
             }
         }
-        print("workout started")
     }
     
     @MainActor func isWorkingOut() -> Bool {

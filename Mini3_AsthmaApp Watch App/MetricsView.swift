@@ -16,9 +16,10 @@ struct MetricsView: View {
         TimelineView(MetricsTimelineSchedule(from: workoutManager.session?.startDate ?? Date(),
                                              isPaused: workoutManager.sessionState == .paused)) { context in
             VStack(alignment: .leading) {
-                ElapsedTimeView(elapsedTime: elapsedTime(with: context.date), workoutDuration: TimeInterval(workoutManager.workoutDuration), showSubseconds: context.cadence == .live)
+                ElapsedTimeView(elapsedTime: elapsedTime(with: context.date), workoutDuration: TimeInterval(workoutManager.currentPhase == .workout ? workoutManager.workoutDuration : workoutManager.currentPhase.duration), showSubseconds: context.cadence == .live)
                     .foregroundStyle(.yellow)
                 Text(workoutManager.heartRate.formatted(.number.precision(.fractionLength(0))) + " bpm")
+                Text(workoutManager.session?.currentActivity.workoutConfiguration.activityType.name ?? "Unknown Phase")
                 
                 if workoutManager.isAboveHRMax {
                     Text("⚠️ High Heart Rate!")
