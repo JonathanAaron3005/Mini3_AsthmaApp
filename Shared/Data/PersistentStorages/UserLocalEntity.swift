@@ -12,12 +12,12 @@ import SwiftData
 class UserLocalEntity {
     @Attribute(.unique) var id: String
     var age: Int
-    var HRmax: Double
+    var HRmax: Int
     var isUsingInhaler: Bool
     var severityLevel: SeverityLevel?
     var asthmaControl: ACTScore?
     
-    init(id: String, age: Int, HRmax: Double, isUsingInhaler: Bool, severityLevel: SeverityLevel?, asthmaControl: ACTScore?) {
+    init(id: String, age: Int, HRmax: Int, isUsingInhaler: Bool, severityLevel: SeverityLevel?, asthmaControl: ACTScore?) {
         self.id = id
         self.age = age
         self.HRmax = HRmax

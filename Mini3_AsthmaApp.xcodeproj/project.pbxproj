@@ -93,50 +93,12 @@
 		DCB879802C6F522E00A88AAD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8797F2C6F522E00A88AAD /* HomeView.swift */; };
 		DCB879822C6F525000A88AAD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879812C6F525000A88AAD /* HomeViewModel.swift */; };
 		DCB879852C6F619900A88AAD /* MirroringWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */; };
-		DCB879872C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879862C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift */; };
+		DCB879872C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */; };
 		DCB879892C6F6E1B00A88AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879882C6F6E1B00A88AAD /* AppDelegate.swift */; };
 		DCB8798B2C6F6F1000A88AAD /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8798A2C6F6F1000A88AAD /* ControlsView.swift */; };
 		DCB8798D2C6F6F1D00A88AAD /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8798C2C6F6F1D00A88AAD /* MetricsView.swift */; };
 		DCB8798F2C6F6F2F00A88AAD /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8798E2C6F6F2F00A88AAD /* SummaryView.swift */; };
 		DCB879912C6F7CA200A88AAD /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879902C6F7CA200A88AAD /* ExerciseDetailView.swift */; };
-		DCB879932C70DE3E00A88AAD /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879922C70DE3E00A88AAD /* DateExtension.swift */; };
-		DCB879942C70DE3E00A88AAD /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879922C70DE3E00A88AAD /* DateExtension.swift */; };
-		DCB879952C70DE3E00A88AAD /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879922C70DE3E00A88AAD /* DateExtension.swift */; };
-		DCB879962C70DE3E00A88AAD /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879922C70DE3E00A88AAD /* DateExtension.swift */; };
-		DCB879972C70DE3E00A88AAD /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879922C70DE3E00A88AAD /* DateExtension.swift */; };
-		DCB879982C70DE3E00A88AAD /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879922C70DE3E00A88AAD /* DateExtension.swift */; };
-		DCB8799B2C70E12C00A88AAD /* ACTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8799A2C70E12C00A88AAD /* ACTView.swift */; };
-		DCB8799C2C70E12C00A88AAD /* ACTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8799A2C70E12C00A88AAD /* ACTView.swift */; };
-		DCB8799D2C70E12C00A88AAD /* ACTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8799A2C70E12C00A88AAD /* ACTView.swift */; };
-		DCB8799E2C70E12C00A88AAD /* ACTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8799A2C70E12C00A88AAD /* ACTView.swift */; };
-		DCB8799F2C70E12C00A88AAD /* ACTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8799A2C70E12C00A88AAD /* ACTView.swift */; };
-		DCB879A02C70E12C00A88AAD /* ACTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB8799A2C70E12C00A88AAD /* ACTView.swift */; };
-		DCB879A22C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */; };
-		DCB879A32C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */; };
-		DCB879A42C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */; };
-		DCB879A52C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */; };
-		DCB879A62C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */; };
-		DCB879A72C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */; };
-		DCB879A92C70E1A600A88AAD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A82C70E1A600A88AAD /* Question.swift */; };
-		DCB879AA2C70E1A600A88AAD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A82C70E1A600A88AAD /* Question.swift */; };
-		DCB879AB2C70E1A600A88AAD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A82C70E1A600A88AAD /* Question.swift */; };
-		DCB879AC2C70E1A600A88AAD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A82C70E1A600A88AAD /* Question.swift */; };
-		DCB879AD2C70E1A600A88AAD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A82C70E1A600A88AAD /* Question.swift */; };
-		DCB879AE2C70E1A600A88AAD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879A82C70E1A600A88AAD /* Question.swift */; };
-		DCB879B02C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
-		DCB879B12C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
-		DCB879B22C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
-		DCB879B32C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
-		DCB879B42C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
-		DCB879B52C72FA9100A88AAD /* DOBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879AF2C72FA9100A88AAD /* DOBView.swift */; };
-		DCB879BE2C73995400A88AAD /* SetWorkoutDurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */; };
-		DCB879C12C747F5A00A88AAD /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */; };
-		DCB879C22C747F7600A88AAD /* MetricsTimelineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */; };
-		DCB879C42C747F9C00A88AAD /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */; };
-		DCB879C52C747FCF00A88AAD /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */; };
-		DCB879C72C74CA4900A88AAD /* WorkoutPhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C62C74CA4900A88AAD /* WorkoutPhaseView.swift */; };
-		DCB879C92C74ED2100A88AAD /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879C82C74ED2100A88AAD /* VisualEffectView.swift */; };
-		DCB879CB2C74F09300A88AAD /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB879CA2C74F09300A88AAD /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,23 +193,12 @@
 		DCB8797F2C6F522E00A88AAD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DCB879812C6F525000A88AAD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutView.swift; sourceTree = "<group>"; };
-		DCB879862C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPhaseViewModel.swift; sourceTree = "<group>"; };
+		DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroringWorkoutViewModel.swift; sourceTree = "<group>"; };
 		DCB879882C6F6E1B00A88AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB8798A2C6F6F1000A88AAD /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		DCB8798C2C6F6F1D00A88AAD /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
 		DCB8798E2C6F6F2F00A88AAD /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		DCB879902C6F7CA200A88AAD /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
-		DCB879922C70DE3E00A88AAD /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
-		DCB8799A2C70E12C00A88AAD /* ACTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACTView.swift; sourceTree = "<group>"; };
-		DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
-		DCB879A82C70E1A600A88AAD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		DCB879AF2C72FA9100A88AAD /* DOBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBView.swift; sourceTree = "<group>"; };
-		DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetWorkoutDurationView.swift; sourceTree = "<group>"; };
-		DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsTimelineSchedule.swift; sourceTree = "<group>"; };
-		DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
-		DCB879C62C74CA4900A88AAD /* WorkoutPhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPhaseView.swift; sourceTree = "<group>"; };
-		DCB879C82C74ED2100A88AAD /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
-		DCB879CA2C74F09300A88AAD /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,7 +357,6 @@
 		DCB8790B2C6DF23200A88AAD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DCB879BF2C747F4600A88AAD /* Presentation */,
 				DCB879712C6F2FF900A88AAD /* Helpers */,
 				DCB879202C6DF66700A88AAD /* Infrastructure */,
 				DCB879162C6DF39700A88AAD /* Domain */,
@@ -418,7 +368,6 @@
 		DCB8790C2C6DF29400A88AAD /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				DCB879992C70E11600A88AAD /* OnboardingView */,
 				DCB879832C6F618700A88AAD /* MirroringWorkoutView */,
 				DCB8797E2C6F51BA00A88AAD /* HomeView */,
 			);
@@ -466,7 +415,6 @@
 			children = (
 				DCB879192C6DF3C700A88AAD /* ExerciseModel.swift */,
 				DCB879382C6DFC7500A88AAD /* UserModel.swift */,
-				DCB879A82C70E1A600A88AAD /* Question.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -510,9 +458,7 @@
 		DCB879712C6F2FF900A88AAD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				DCB879C02C747F5A00A88AAD /* MetricsTimelineSchedule.swift */,
 				DCB879722C6F300C00A88AAD /* Logger.swift */,
-				DCB879922C70DE3E00A88AAD /* DateExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -520,7 +466,6 @@
 		DCB8797E2C6F51BA00A88AAD /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				DCB879BD2C73995400A88AAD /* SetWorkoutDurationView.swift */,
 				DCB879902C6F7CA200A88AAD /* ExerciseDetailView.swift */,
 				DCB8797F2C6F522E00A88AAD /* HomeView.swift */,
 				DCB879812C6F525000A88AAD /* HomeViewModel.swift */,
@@ -531,31 +476,10 @@
 		DCB879832C6F618700A88AAD /* MirroringWorkoutView */ = {
 			isa = PBXGroup;
 			children = (
-				DCB879C62C74CA4900A88AAD /* WorkoutPhaseView.swift */,
-				DCB879862C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift */,
 				DCB879842C6F619900A88AAD /* MirroringWorkoutView.swift */,
+				DCB879862C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift */,
 			);
 			path = MirroringWorkoutView;
-			sourceTree = "<group>";
-		};
-		DCB879992C70E11600A88AAD /* OnboardingView */ = {
-			isa = PBXGroup;
-			children = (
-				DCB879AF2C72FA9100A88AAD /* DOBView.swift */,
-				DCB8799A2C70E12C00A88AAD /* ACTView.swift */,
-				DCB879A12C70E13D00A88AAD /* OnboardingViewModel.swift */,
-			);
-			path = OnboardingView;
-			sourceTree = "<group>";
-		};
-		DCB879BF2C747F4600A88AAD /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				DCB879C32C747F9C00A88AAD /* ElapsedTimeView.swift */,
-				DCB879C82C74ED2100A88AAD /* VisualEffectView.swift */,
-				DCB879CA2C74F09300A88AAD /* CustomButton.swift */,
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -781,34 +705,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB879322C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
-				DCB879932C70DE3E00A88AAD /* DateExtension.swift in Sources */,
 				DCB879472C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
 				DCB878B22C6DF1B200A88AAD /* ContentView.swift in Sources */,
 				DCB879822C6F525000A88AAD /* HomeViewModel.swift in Sources */,
-				DCB879C92C74ED2100A88AAD /* VisualEffectView.swift in Sources */,
 				DCB879802C6F522E00A88AAD /* HomeView.swift in Sources */,
-				DCB8799B2C70E12C00A88AAD /* ACTView.swift in Sources */,
-				DCB879C72C74CA4900A88AAD /* WorkoutPhaseView.swift in Sources */,
 				DCB879392C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878B02C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
-				DCB879C12C747F5A00A88AAD /* MetricsTimelineSchedule.swift in Sources */,
 				DCB8796C2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */,
 				DCB8792B2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
-				DCB879CB2C74F09300A88AAD /* CustomButton.swift in Sources */,
-				DCB879BE2C73995400A88AAD /* SetWorkoutDurationView.swift in Sources */,
 				DCB879102C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879852C6F619900A88AAD /* MirroringWorkoutView.swift in Sources */,
 				DCB879402C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
 				DCB879912C6F7CA200A88AAD /* ExerciseDetailView.swift in Sources */,
-				DCB879872C6F6A2300A88AAD /* WorkoutPhaseViewModel.swift in Sources */,
-				DCB879B02C72FA9100A88AAD /* DOBView.swift in Sources */,
+				DCB879872C6F6A2300A88AAD /* MirroringWorkoutViewModel.swift in Sources */,
 				DCB879742C6F303E00A88AAD /* Logger.swift in Sources */,
 				DCB879232C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
-				DCB879A92C70E1A600A88AAD /* Question.swift in Sources */,
 				DCB8794F2C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
-				DCB879A22C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,
 				DCB8791A2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
-				DCB879C42C747F9C00A88AAD /* ElapsedTimeView.swift in Sources */,
 				DCB8797D2C6F30A100A88AAD /* WorkoutManager+iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -822,18 +735,13 @@
 				DCB8793A2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB879332C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
 				DCB8796D2C6F2F7F00A88AAD /* WorkoutManager.swift in Sources */,
-				DCB879942C70DE3E00A88AAD /* DateExtension.swift in Sources */,
 				DCB8791B2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
-				DCB879AA2C70E1A600A88AAD /* Question.swift in Sources */,
 				DCB8792C2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
 				DCB879752C6F303F00A88AAD /* Logger.swift in Sources */,
 				DCB879502C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
-				DCB879A32C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,
 				DCB879112C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879412C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
 				DCB879242C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
-				DCB8799C2C70E12C00A88AAD /* ACTView.swift in Sources */,
-				DCB879B12C72FA9100A88AAD /* DOBView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,10 +750,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB879342C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
-				DCB879952C70DE3E00A88AAD /* DateExtension.swift in Sources */,
 				DCB879492C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
-				DCB879A42C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,
-				DCB8799D2C70E12C00A88AAD /* ACTView.swift in Sources */,
 				DCB878CB2C6DF1B400A88AAD /* Mini3_AsthmaAppUITests.swift in Sources */,
 				DCB8793B2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878CD2C6DF1B400A88AAD /* Mini3_AsthmaAppUITestsLaunchTests.swift in Sources */,
@@ -853,11 +758,9 @@
 				DCB8792D2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
 				DCB879122C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879422C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
-				DCB879AB2C70E1A600A88AAD /* Question.swift in Sources */,
 				DCB879762C6F304000A88AAD /* Logger.swift in Sources */,
 				DCB879252C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
 				DCB879512C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
-				DCB879B22C72FA9100A88AAD /* DOBView.swift in Sources */,
 				DCB8791C2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -868,28 +771,21 @@
 			files = (
 				DCB879352C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
 				DCB8794A2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
-				DCB879C52C747FCF00A88AAD /* ElapsedTimeView.swift in Sources */,
 				DCB878DA2C6DF1B400A88AAD /* ContentView.swift in Sources */,
 				DCB8798D2C6F6F1D00A88AAD /* MetricsView.swift in Sources */,
 				DCB879892C6F6E1B00A88AAD /* AppDelegate.swift in Sources */,
-				DCB879962C70DE3E00A88AAD /* DateExtension.swift in Sources */,
 				DCB8793C2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878D82C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
 				DCB8796B2C6F2F7700A88AAD /* WorkoutManager.swift in Sources */,
 				DCB8792E2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
-				DCB879B32C72FA9100A88AAD /* DOBView.swift in Sources */,
 				DCB879132C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879432C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
 				DCB879732C6F300C00A88AAD /* Logger.swift in Sources */,
-				DCB879AC2C70E1A600A88AAD /* Question.swift in Sources */,
-				DCB8799E2C70E12C00A88AAD /* ACTView.swift in Sources */,
 				DCB879262C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
 				DCB8798B2C6F6F1000A88AAD /* ControlsView.swift in Sources */,
 				DCB879522C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
-				DCB879C22C747F7600A88AAD /* MetricsTimelineSchedule.swift in Sources */,
 				DCB8791D2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
 				DCB8797A2C6F307700A88AAD /* WorkoutManager+watchOS.swift in Sources */,
-				DCB879A52C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,
 				DCB8798F2C6F6F2F00A88AAD /* SummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -903,18 +799,13 @@
 				DCB8793D2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB879362C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
 				DCB8796F2C6F2F8000A88AAD /* WorkoutManager.swift in Sources */,
-				DCB879972C70DE3E00A88AAD /* DateExtension.swift in Sources */,
 				DCB8791E2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
-				DCB879AD2C70E1A600A88AAD /* Question.swift in Sources */,
 				DCB8792F2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
 				DCB879772C6F304000A88AAD /* Logger.swift in Sources */,
 				DCB879532C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
-				DCB879A62C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,
 				DCB879142C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879442C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
 				DCB879272C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
-				DCB8799F2C70E12C00A88AAD /* ACTView.swift in Sources */,
-				DCB879B42C72FA9100A88AAD /* DOBView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,10 +814,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB879372C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
-				DCB879982C70DE3E00A88AAD /* DateExtension.swift in Sources */,
 				DCB8794C2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
-				DCB879A72C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,
-				DCB879A02C70E12C00A88AAD /* ACTView.swift in Sources */,
 				DCB878F32C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITests.swift in Sources */,
 				DCB8793E2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878F52C6DF1B500A88AAD /* Mini3_AsthmaApp_Watch_AppUITestsLaunchTests.swift in Sources */,
@@ -934,11 +822,9 @@
 				DCB879302C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
 				DCB879152C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879452C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
-				DCB879AE2C70E1A600A88AAD /* Question.swift in Sources */,
 				DCB879782C6F304100A88AAD /* Logger.swift in Sources */,
 				DCB879282C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
 				DCB879542C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
-				DCB879B52C72FA9100A88AAD /* DOBView.swift in Sources */,
 				DCB8791F2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

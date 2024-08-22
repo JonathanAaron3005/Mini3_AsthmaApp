@@ -25,7 +25,6 @@ extension WorkoutManager {
             }
         }
     }
-
     
     func startWorkout(workoutConfiguration: HKWorkoutConfiguration) async throws {
         session = try HKWorkoutSession(healthStore: healthStore, configuration: workoutConfiguration)
@@ -43,8 +42,6 @@ extension WorkoutManager {
         let startDate = Date()
         session?.startActivity(with: startDate)
         try await builder?.beginCollection(at: startDate)
-        
-        startWarmup()
     }
     
     func handleReceivedData(_ data: Data) throws {
