@@ -164,7 +164,7 @@ struct StripeProgressBar: UIViewRepresentable {
 }
 
 struct PBTestView: View {
-    @State private var progress: Float = 0.3 // Initial progress
+    @State private var progress: Float = 0.9 // Initial progress
     
     var body: some View {
         VStack {

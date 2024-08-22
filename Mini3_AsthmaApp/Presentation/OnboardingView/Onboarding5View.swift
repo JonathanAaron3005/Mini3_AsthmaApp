@@ -25,13 +25,12 @@ struct Onboarding5View: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Yes, I use inhaler.")
+                    Text(onboardingViewModel.isUsingInhaler == nil ? "Are you using inhalers?" : onboardingViewModel.isUsingInhaler! ? "Yes, I'm using inhalers" : "No, I don't use inhalers")
                         .font(.custom("Cruyff Sans", size: 20).bold())
                 }
                 Spacer()
-                Image(systemName: "chevron.right")
-                    .imageScale(.medium)
-                    .font(.system(.title3))
+                Image(systemName: onboardingViewModel.isUsingInhaler == nil ?  "chevron.right" : "checkmark.circle.fill")
+                    .font(.system(.title2))
             }
             .padding(25)
             .background {
@@ -51,9 +50,13 @@ struct Onboarding5View: View {
         .sheet(isPresented: $sheetOpen, content: {
             VStack(spacing: 0){
                 HStack(alignment:.bottom){
-                    Text("Cancel")
                     Spacer()
-                    Text("Save")
+                    Button {
+                        sheetOpen.toggle()
+                    } label: {
+                        Text("Save")
+                            .foregroundStyle(.blue)
+                    }
                 }
                 .padding(20)
                 .overlay(Rectangle()

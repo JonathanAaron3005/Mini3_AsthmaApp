@@ -11,8 +11,9 @@ struct Onboarding3View: View {
     @ObservedObject var onboardingViewModel: OnboardingViewModel
     @State var sheetOpen = false
     @State var pickedOp1 = 0
-    @State var selectedOption: Int?
+    @State var selectedOption: SeverityLevel?
     @State var selectedOptionHaveMedicalDiag: Bool?
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack(alignment: .leading, spacing: 25){
             Spacer().frame(height: 100)
@@ -26,13 +27,12 @@ struct Onboarding3View: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Select options")
+                    Text(onboardingViewModel.severity == nil ? "Select options" : "Severity level is \(onboardingViewModel.severity!.rawValue.capitalized)")
                         .font(.custom("Cruyff Sans", size: 20).bold())
                 }
                 Spacer()
-                Image(systemName: "chevron.right")
-                    .imageScale(.medium)
-                    .font(.system(.title3))
+                Image(systemName: onboardingViewModel.severity == nil ?  "chevron.right" : "checkmark.circle.fill")
+                    .font(.system(.title2))
             }
             .padding(25)
             .background {
@@ -53,9 +53,26 @@ struct Onboarding3View: View {
         .sheet(isPresented: $sheetOpen, content: {
             VStack(spacing: 0){
                 HStack(alignment:.bottom){
-                    Text("Cancel")
+                    Button {
+                        sheetOpen.toggle()
+                    } label: {
+                        Text("Cancel")
+                    }
+
                     Spacer()
-                    Text("Save")
+                    Button {
+                        if selectedOptionHaveMedicalDiag == true{
+                            if selectedOption != nil{
+                                onboardingViewModel.severity = selectedOption
+                                sheetOpen.toggle()
+                            }
+                        }else{
+                            
+                        }
+                    } label: {
+                        Text("Save")
+                            .foregroundStyle(.blue)
+                    }
                 }
                 .padding(20)
                 .overlay(Rectangle()
@@ -83,11 +100,10 @@ struct Onboarding3View: View {
                             VStack(alignment: .leading, spacing: 15){
                                 Text("How severe was your asthma?")
                                 VStack(alignment:.leading){
-                                    RadioButton(tag: 1, selection: $selectedOption, label: "I’m not sure")
-                                    RadioButton(tag: 2, selection: $selectedOption, label: "Severe")
-                                    RadioButton(tag: 3, selection: $selectedOption, label: "Moderate")
-                                    RadioButton(tag: 4, selection: $selectedOption, label: "Mild")
-                                    RadioButton(tag: 5, selection: $selectedOption, label: "Intermittent")
+                                    RadioButton(tag: .severe, selection: $selectedOption, label: "Severe")
+                                    RadioButton(tag: .moderate, selection: $selectedOption, label: "Moderate")
+                                    RadioButton(tag: .mild, selection: $selectedOption, label: "Mild")
+                                    RadioButton(tag: .intermittent, selection: $selectedOption, label: "Intermittent")
                                 }
                             }
 

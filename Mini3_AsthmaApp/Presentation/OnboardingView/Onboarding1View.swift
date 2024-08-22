@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Onboarding1View: View {
     @ObservedObject var onboardingViewModel: OnboardingViewModel
-    @State var triggerAuthorization = false
+    @State var triggerAuth: Bool = false
     var body: some View {
         VStack(alignment: .leading, spacing: 25){
             Spacer().frame(height: 100)
@@ -39,8 +39,8 @@ struct Onboarding1View: View {
                     .fill(Color.onboardingButtonMidBG)
             }
             .shadow(color: Color.black.opacity(0.18), radius: 10, x: 0, y: 4)
-            .onTapGesture {
-                triggerAuthorization = true
+            .onAppear() {
+                triggerAuth = true
             }
             
             Text("We promise we’ll keep it safe and never share it with anyone. Learn more from our privacy policy.")
@@ -53,14 +53,13 @@ struct Onboarding1View: View {
         .healthDataAccessRequest(store: onboardingViewModel.getHealthStore(),
                                  shareTypes: onboardingViewModel.getTypesToShare(),
                                  readTypes: onboardingViewModel.getTypesToRead(),
-                                 trigger: triggerAuthorization, completion: { result in
+                                 trigger: triggerAuth, completion: { result in
             switch result {
             case .success(let success):
-                print("\(success) for authorization")
+                print("\(success): success for authorization")
             case .failure(let error):
-                print("\(error) for authorization")
+                print("\(error): error for authorization")
             }
-            triggerAuthorization = false
         })
     }
 }

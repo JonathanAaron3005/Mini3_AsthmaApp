@@ -16,8 +16,8 @@ struct HomeView: View {
     )
     @State private var didStartWorkout = false
     @State private var selectedExercise: ExerciseType?
-    
-    @State private var triggerAuthorization = false
+    @State private var gotoOnboarding = false
+    @AppStorage("hasDoneOnboarding") private var hasDoneOnboarding: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -35,20 +35,8 @@ struct HomeView: View {
                 
             }
             .onAppear() {
-                triggerAuthorization.toggle()
                 viewModel.retrieveRemoteSession()
             }
-            .healthDataAccessRequest(store: viewModel.getHealthStore(),
-                                     shareTypes: viewModel.getTypesToShare(),
-                                     readTypes: viewModel.getTypesToRead(),
-                                     trigger: triggerAuthorization, completion: { result in
-                switch result {
-                case .success(let success):
-                    print("\(success) for authorization")
-                case .failure(let error):
-                    print("\(error) for authorization")
-                }
-            })
             .sheet(item: $selectedExercise) { exercise in
                 ExerciseDetailView(viewModel: viewModel, didStartWorkout: $didStartWorkout)
             }
@@ -57,6 +45,15 @@ struct HomeView: View {
             }
             .navigationBarTitle("Mirroring Workout")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(isPresented: $gotoOnboarding, destination:{
+                OnboardingView()
+                    .navigationBarBackButtonHidden()
+            })
+            .onAppear{
+                if hasDoneOnboarding == false{
+                    gotoOnboarding = true
+                }
+            }
         }
     }
 }

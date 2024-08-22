@@ -11,7 +11,7 @@ class OnboardingViewModel: ObservableObject {
     @Published var selectedAnswers: [Int] 
     @Published var totalScore: Int = 0
     
-    @Published var isUsingInhaler: Bool = false
+    @Published var isUsingInhaler: Bool?
     
     @Published var HRMax: Double?
     
@@ -40,7 +40,7 @@ class OnboardingViewModel: ObservableObject {
     }
     
     func submitAllData() {
-        userUseCase.saveUser(dob: dob, severity: severity, totalScore: totalScore, isUsingInhaler: isUsingInhaler, HRMax: HRMax)
+        userUseCase.saveUser(dob: dob, severity: severity, totalScore: totalScore, isUsingInhaler: isUsingInhaler ?? false, HRMax: HRMax)
     }
     
     func getHealthStore() -> HKHealthStore {

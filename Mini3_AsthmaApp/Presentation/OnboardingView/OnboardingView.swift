@@ -11,6 +11,23 @@ struct OnboardingView: View {
     @StateObject var onboardingViewModel = OnboardingViewModel(userUseCase: DefaultUserUseCase(userRepo: LocalUserRepository()))
     @State var currentOnboardingPage = 1
     @State var clicked = false
+    @Environment(\.dismiss) var dismiss
+    @AppStorage("hasDoneOnboarding") private var hasDoneOnboarding: Bool = false
+    
+    func continueOnboarding(){
+        currentOnboardingPage += 1
+        if currentOnboardingPage > 7{
+            currentOnboardingPage = 1
+        }
+        withAnimation(.linear(duration: 0.1)) {
+            clicked = true
+        } completion: {
+            withAnimation {
+                clicked = false
+            }
+        }
+    }
+    
     var body: some View {
         ZStack{
             switch currentOnboardingPage{
@@ -56,21 +73,30 @@ struct OnboardingView: View {
                 .padding()
                 .background {
                     RoundedRectangle(cornerRadius: 40, style: .continuous)
-                        .fill(clicked ? Color.onboardingButtonBottomBG : Color.onboardingButtonBottomBG.opacity(0.3))
+                        .fill(clicked ? Color.onboardingButtonBottomBG.opacity(0.3) : Color.onboardingButtonBottomBG)
                 }
                 .onTapGesture {
-                    currentOnboardingPage += 1
-                    if currentOnboardingPage > 7{
-                        currentOnboardingPage = 1
+                    
+                    if (currentOnboardingPage == 1) {
+                        continueOnboarding()
+                    }else if (currentOnboardingPage == 2 && !Calendar.current.isDateInToday(onboardingViewModel.dob)) {
+                        continueOnboarding()
+                    }else if (currentOnboardingPage == 3 && onboardingViewModel.severity != nil) {
+                        continueOnboarding()
+                    }else if (currentOnboardingPage == 4 && onboardingViewModel.totalScore != 0){
+                        continueOnboarding()
                     }
-                    withAnimation {
-                        clicked = true
-                    } completion: {
-                        withAnimation {
-                            clicked = false
-                        }
+                    else if (currentOnboardingPage == 5 && onboardingViewModel.isUsingInhaler != nil){
+                        continueOnboarding()
                     }
-
+                    else if (currentOnboardingPage == 6){
+                        continueOnboarding()
+                    }
+                    else if (currentOnboardingPage == 7){
+                        onboardingViewModel.submitAllData()
+                        hasDoneOnboarding = true
+                        dismiss() //TO HOME PAGE
+                    }
                 }
             }
             .padding(25)
