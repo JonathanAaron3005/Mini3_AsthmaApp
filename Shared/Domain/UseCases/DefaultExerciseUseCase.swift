@@ -30,6 +30,6 @@ internal final class DefaultExerciseUseCase: ExerciseUseCase {
     
     func getRecommendedWorkoutTypes() -> [ExerciseType] {
         //logic based on user's asthma condition
-        return [.swimming, .running, .indoorCycling]
+        return [.running, .swimming, .indoorCycling]
     }
 }

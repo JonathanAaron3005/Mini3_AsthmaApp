@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		462E7DAB2C77CBCF000F25ED /* Petals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D862C77CBCA000F25ED /* Petals.swift */; };
+		462E7DAC2C77CBCF000F25ED /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D872C77CBCA000F25ED /* Rectangle.swift */; };
+		462E7DAD2C77CBCF000F25ED /* Archive.zip in Resources */ = {isa = PBXBuildFile; fileRef = 462E7D892C77CBCA000F25ED /* Archive.zip */; };
+		462E7DAE2C77CBCF000F25ED /* BreathingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D8A2C77CBCA000F25ED /* BreathingView.swift */; };
+		462E7DAF2C77CBCF000F25ED /* GuidenceBT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D8B2C77CBCA000F25ED /* GuidenceBT.swift */; };
+		462E7DB02C77CBCF000F25ED /* WarmUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D8C2C77CBCA000F25ED /* WarmUp.swift */; };
+		462E7DB12C77CBCF000F25ED /* AlertHR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D8E2C77CBCA000F25ED /* AlertHR.swift */; };
+		462E7DB22C77CBCF000F25ED /* CustomExerciseAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D8F2C77CBCA000F25ED /* CustomExerciseAlert.swift */; };
+		462E7DB32C77CBCF000F25ED /* ExerciseAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D902C77CBCA000F25ED /* ExerciseAlert.swift */; };
+		462E7DB42C77CBCF000F25ED /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D912C77CBCA000F25ED /* NotificationView.swift */; };
+		462E7DB52C77CBCF000F25ED /* WarmUpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D922C77CBCA000F25ED /* WarmUpTimer.swift */; };
+		462E7DB62C77CBCF000F25ED /* IndicatorIphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D942C77CBCA000F25ED /* IndicatorIphone.swift */; };
+		462E7DB72C77CBCF000F25ED /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D962C77CBCB000F25ED /* Color.swift */; };
+		462E7DB82C77CBCF000F25ED /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D972C77CBCB000F25ED /* Control.swift */; };
+		462E7DB92C77CBCF000F25ED /* Notif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D982C77CBCB000F25ED /* Notif.swift */; };
+		462E7DBA2C77CBCF000F25ED /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D9A2C77CBCE000F25ED /* AppConfig.swift */; };
+		462E7DBB2C77CBCF000F25ED /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D9B2C77CBCE000F25ED /* File.swift */; };
+		462E7DBC2C77CBCF000F25ED /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E7D9C2C77CBCE000F25ED /* Transition.swift */; };
+		46CAD1422C77D48F007F6C5C /* PallyVariable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46CAD1412C77D48F007F6C5C /* PallyVariable.ttf */; };
+		46CAD1432C77D48F007F6C5C /* PallyVariable.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46CAD1412C77D48F007F6C5C /* PallyVariable.ttf */; };
 		DCB878B02C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878AF2C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift */; };
 		DCB878B22C6DF1B200A88AAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB878B12C6DF1B200A88AAD /* ContentView.swift */; };
 		DCB878B42C6DF1B400A88AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB878B32C6DF1B400A88AAD /* Assets.xcassets */; };
@@ -181,6 +201,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		462E7D862C77CBCA000F25ED /* Petals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Petals.swift; sourceTree = "<group>"; };
+		462E7D872C77CBCA000F25ED /* Rectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		462E7D892C77CBCA000F25ED /* Archive.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Archive.zip; sourceTree = "<group>"; };
+		462E7D8A2C77CBCA000F25ED /* BreathingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreathingView.swift; sourceTree = "<group>"; };
+		462E7D8B2C77CBCA000F25ED /* GuidenceBT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuidenceBT.swift; sourceTree = "<group>"; };
+		462E7D8C2C77CBCA000F25ED /* WarmUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarmUp.swift; sourceTree = "<group>"; };
+		462E7D8E2C77CBCA000F25ED /* AlertHR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHR.swift; sourceTree = "<group>"; };
+		462E7D8F2C77CBCA000F25ED /* CustomExerciseAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExerciseAlert.swift; sourceTree = "<group>"; };
+		462E7D902C77CBCA000F25ED /* ExerciseAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseAlert.swift; sourceTree = "<group>"; };
+		462E7D912C77CBCA000F25ED /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		462E7D922C77CBCA000F25ED /* WarmUpTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarmUpTimer.swift; sourceTree = "<group>"; };
+		462E7D942C77CBCA000F25ED /* IndicatorIphone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorIphone.swift; sourceTree = "<group>"; };
+		462E7D962C77CBCB000F25ED /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		462E7D972C77CBCB000F25ED /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		462E7D982C77CBCB000F25ED /* Notif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notif.swift; sourceTree = "<group>"; };
+		462E7D9A2C77CBCE000F25ED /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		462E7D9B2C77CBCE000F25ED /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		462E7D9C2C77CBCE000F25ED /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		46CAD1412C77D48F007F6C5C /* PallyVariable.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PallyVariable.ttf; sourceTree = "<group>"; };
 		DCB878AC2C6DF1B200A88AAD /* Mini3_AsthmaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mini3_AsthmaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB878AF2C6DF1B200A88AAD /* Mini3_AsthmaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini3_AsthmaAppApp.swift; sourceTree = "<group>"; };
 		DCB878B12C6DF1B200A88AAD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -295,6 +334,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		462E7D882C77CBCA000F25ED /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				462E7D862C77CBCA000F25ED /* Petals.swift */,
+				462E7D872C77CBCA000F25ED /* Rectangle.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		462E7D8D2C77CBCA000F25ED /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				462E7D882C77CBCA000F25ED /* Component */,
+				462E7D892C77CBCA000F25ED /* Archive.zip */,
+				462E7D8A2C77CBCA000F25ED /* BreathingView.swift */,
+				462E7D8B2C77CBCA000F25ED /* GuidenceBT.swift */,
+				462E7D8C2C77CBCA000F25ED /* WarmUp.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		462E7D932C77CBCA000F25ED /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				462E7D8E2C77CBCA000F25ED /* AlertHR.swift */,
+				462E7D8F2C77CBCA000F25ED /* CustomExerciseAlert.swift */,
+				462E7D902C77CBCA000F25ED /* ExerciseAlert.swift */,
+				462E7D912C77CBCA000F25ED /* NotificationView.swift */,
+				462E7D922C77CBCA000F25ED /* WarmUpTimer.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		462E7D952C77CBCA000F25ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				462E7D8D2C77CBCA000F25ED /* Dashboard */,
+				462E7D932C77CBCA000F25ED /* Notification */,
+				462E7D942C77CBCA000F25ED /* IndicatorIphone.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		462E7D992C77CBCB000F25ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				462E7D962C77CBCB000F25ED /* Color.swift */,
+				462E7D972C77CBCB000F25ED /* Control.swift */,
+				462E7D982C77CBCB000F25ED /* Notif.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		462E7D9D2C77CBCE000F25ED /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				462E7D9A2C77CBCE000F25ED /* AppConfig.swift */,
+				462E7D9B2C77CBCE000F25ED /* File.swift */,
+				462E7D9C2C77CBCE000F25ED /* Transition.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		DCB878A32C6DF1B200A88AAD = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +464,9 @@
 			isa = PBXGroup;
 			children = (
 				DCB879692C6F2E5300A88AAD /* Mini3-AsthmaApp-Watch-App-Info.plist */,
+				462E7D992C77CBCB000F25ED /* Extension */,
+				462E7D9D2C77CBCE000F25ED /* Helper */,
+				462E7D952C77CBCA000F25ED /* View */,
 				DCB879682C6F2E3C00A88AAD /* Mini3_AsthmaApp Watch App.entitlements */,
 				DCB878D72C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift */,
 				DCB879882C6F6E1B00A88AAD /* AppDelegate.swift */,
@@ -589,6 +694,7 @@
 		F816D7A42C75F9A000492E7C /* Pally */ = {
 			isa = PBXGroup;
 			children = (
+				46CAD1412C77D48F007F6C5C /* PallyVariable.ttf */,
 				F816D7A12C75F9A000492E7C /* Pally-Bold.otf */,
 				F816D7A22C75F9A000492E7C /* Pally-Medium.otf */,
 				F816D7A32C75F9A000492E7C /* Pally-Regular.otf */,
@@ -743,6 +849,7 @@
 				F816D7AA2C75F9A000492E7C /* CruyffSans-Medium.ttf in Resources */,
 				F816D7C02C75F9A000492E7C /* Pally-Regular.otf in Resources */,
 				F816D7B42C75F9A000492E7C /* CruyffSansMono-Bold.ttf in Resources */,
+				46CAD1422C77D48F007F6C5C /* PallyVariable.ttf in Resources */,
 				F816D7BE2C75F9A000492E7C /* Pally-Medium.otf in Resources */,
 				F816D7A82C75F9A000492E7C /* CruyffSans-Light.ttf in Resources */,
 				F816D7A62C75F9A000492E7C /* CruyffSans-Bold.ttf in Resources */,
@@ -762,6 +869,7 @@
 				F816D7AD2C75F9A000492E7C /* CruyffSans-Regular.ttf in Resources */,
 				F816D7AF2C75F9A000492E7C /* CruyffSansCondensed-Medium.ttf in Resources */,
 				F816D7BB2C75F9A000492E7C /* CruyffSansMono-Regular.ttf in Resources */,
+				46CAD1432C77D48F007F6C5C /* PallyVariable.ttf in Resources */,
 				F816D7B72C75F9A000492E7C /* CruyffSansMono-Light.ttf in Resources */,
 				F816D7AB2C75F9A000492E7C /* CruyffSans-Medium.ttf in Resources */,
 				F816D7C12C75F9A000492E7C /* Pally-Regular.otf in Resources */,
@@ -769,6 +877,7 @@
 				F816D7BF2C75F9A000492E7C /* Pally-Medium.otf in Resources */,
 				F816D7A92C75F9A000492E7C /* CruyffSans-Light.ttf in Resources */,
 				F816D7A72C75F9A000492E7C /* CruyffSans-Bold.ttf in Resources */,
+				462E7DAD2C77CBCF000F25ED /* Archive.zip in Resources */,
 				DCB878DC2C6DF1B500A88AAD /* Assets.xcassets in Resources */,
 				F816D7BD2C75F9A000492E7C /* Pally-Bold.otf in Resources */,
 			);
@@ -844,31 +953,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				462E7DBC2C77CBCF000F25ED /* Transition.swift in Sources */,
 				DCB879352C6DFAED00A88AAD /* UserLocalEntity.swift in Sources */,
+				462E7DBA2C77CBCF000F25ED /* AppConfig.swift in Sources */,
+				462E7DB12C77CBCF000F25ED /* AlertHR.swift in Sources */,
+				462E7DAF2C77CBCF000F25ED /* GuidenceBT.swift in Sources */,
 				DCB8794A2C6E17B700A88AAD /* DefaultExerciseUseCase.swift in Sources */,
+				462E7DB02C77CBCF000F25ED /* WarmUp.swift in Sources */,
 				DCB879C52C747FCF00A88AAD /* ElapsedTimeView.swift in Sources */,
+				462E7DB32C77CBCF000F25ED /* ExerciseAlert.swift in Sources */,
+				462E7DAC2C77CBCF000F25ED /* Rectangle.swift in Sources */,
 				DCB878DA2C6DF1B400A88AAD /* ContentView.swift in Sources */,
+				462E7DBB2C77CBCF000F25ED /* File.swift in Sources */,
 				DCB8798D2C6F6F1D00A88AAD /* MetricsView.swift in Sources */,
+				462E7DB72C77CBCF000F25ED /* Color.swift in Sources */,
+				462E7DB92C77CBCF000F25ED /* Notif.swift in Sources */,
 				F816D78F2C75F68F00492E7C /* WorkoutManager.swift in Sources */,
 				DCB879892C6F6E1B00A88AAD /* AppDelegate.swift in Sources */,
 				F816D7932C75F68F00492E7C /* WorkoutManager+watchOS.swift in Sources */,
+				462E7DAE2C77CBCF000F25ED /* BreathingView.swift in Sources */,
+				462E7DB82C77CBCF000F25ED /* Control.swift in Sources */,
 				DCB879962C70DE3E00A88AAD /* DateExtension.swift in Sources */,
 				DCB8793C2C6DFC7500A88AAD /* UserModel.swift in Sources */,
 				DCB878D82C6DF1B400A88AAD /* Mini3_AsthmaAppApp.swift in Sources */,
 				DCB8792E2C6DF73600A88AAD /* ExerciseLocalEntity.swift in Sources */,
+				462E7DAB2C77CBCF000F25ED /* Petals.swift in Sources */,
 				DCB879B32C72FA9100A88AAD /* DOBView.swift in Sources */,
 				DCB879132C6DF34100A88AAD /* LocalExerciseRepository.swift in Sources */,
 				DCB879432C6E06AD00A88AAD /* LocalUserRepository.swift in Sources */,
 				DCB879732C6F300C00A88AAD /* Logger.swift in Sources */,
+				462E7DB42C77CBCF000F25ED /* NotificationView.swift in Sources */,
 				DCB879AC2C70E1A600A88AAD /* Question.swift in Sources */,
 				DCB8799E2C70E12C00A88AAD /* ACTView.swift in Sources */,
 				DCB879262C6DF69D00A88AAD /* SwiftDataContextManager.swift in Sources */,
 				DCB8798B2C6F6F1000A88AAD /* ControlsView.swift in Sources */,
+				462E7DB62C77CBCF000F25ED /* IndicatorIphone.swift in Sources */,
 				DCB879522C6E182000A88AAD /* DefaultUserUseCase.swift in Sources */,
 				DCB879C22C747F7600A88AAD /* MetricsTimelineSchedule.swift in Sources */,
 				DCB8791D2C6DF3C700A88AAD /* ExerciseModel.swift in Sources */,
 				DCB879A52C70E13D00A88AAD /* OnboardingViewModel.swift in Sources */,
 				DCB8798F2C6F6F2F00A88AAD /* SummaryView.swift in Sources */,
+				462E7DB22C77CBCF000F25ED /* CustomExerciseAlert.swift in Sources */,
+				462E7DB52C77CBCF000F25ED /* WarmUpTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,7 +1196,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 3F3KZHGXN6;
+				DEVELOPMENT_TEAM = SMF997D256;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mini3-AsthmaApp-Watch-App-Info.plist";
@@ -1079,13 +1205,13 @@
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "bint.Mini3-AsthmaApp";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "kevin.Mini3-AsthmaApp";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bint.Mini3-AsthmaApp.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1107,7 +1233,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 3F3KZHGXN6;
+				DEVELOPMENT_TEAM = SMF997D256;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mini3-AsthmaApp-Watch-App-Info.plist";
@@ -1116,13 +1242,13 @@
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "bint.Mini3-AsthmaApp";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "kevin.Mini3-AsthmaApp";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bint.Mini3-AsthmaApp.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1146,7 +1272,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 3F3KZHGXN6;
+				DEVELOPMENT_TEAM = SMF997D256;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
@@ -1164,7 +1290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bint.Mini3-AsthmaApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1185,7 +1311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 3F3KZHGXN6;
+				DEVELOPMENT_TEAM = SMF997D256;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
@@ -1203,7 +1329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bint.Mini3-AsthmaApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1221,13 +1347,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3F3KZHGXN6;
+				DEVELOPMENT_TEAM = SMF997D256;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app would like to access your health data";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bint.Mini3-AsthmaApp-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -1245,13 +1371,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3F3KZHGXN6;
+				DEVELOPMENT_TEAM = SMF997D256;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app would like to access your health data";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bint.Mini3-AsthmaApp-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;

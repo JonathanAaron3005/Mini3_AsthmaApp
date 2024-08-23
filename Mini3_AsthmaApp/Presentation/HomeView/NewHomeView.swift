@@ -14,6 +14,9 @@ struct NewHomeView: View {
     @State private var selectedExercise: ExerciseType?
     @State private var didStartWorkout = false
     
+    @State private var gotoOnboarding = false
+    @AppStorage("hasDoneOnboarding") private var hasDoneOnboarding: Bool = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -270,10 +273,22 @@ struct NewHomeView: View {
                 .navigationDestination(isPresented: $didStartWorkout) {
                     WorkoutPhaseView()
                 }
+                .navigationDestination(isPresented: $gotoOnboarding, destination:{
+                    OnboardingView()
+                        .navigationBarBackButtonHidden()
+                })
+                .onAppear{
+                    if hasDoneOnboarding == false{
+                        gotoOnboarding = true
+                    }
+                }
             }
             .background(.onboardingBG)
             .scrollContentBackground(.hidden)
-        .ignoresSafeArea()
+            .ignoresSafeArea()
+            .onAppear() {
+                viewModel.retrieveRemoteSession()
+            }
         }
     }
 }

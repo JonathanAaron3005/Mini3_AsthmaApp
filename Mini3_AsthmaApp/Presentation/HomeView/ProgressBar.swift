@@ -1,30 +1,6 @@
 import SwiftUI
 import UIKit
 
-//class StripesView: UIView {
-//    
-//    override func draw(_ rect: CGRect) {
-//        
-//        let T: CGFloat = 10     // desired thickness of lines
-//        let G: CGFloat = 2     // desired gap between lines
-//        let W = rect.size.width
-//        let H = rect.size.height
-//        
-//        guard let c = UIGraphicsGetCurrentContext() else { return }
-//        c.setStrokeColor(UIColor.red.cgColor)
-//        c.setLineWidth(T)
-//        
-//        var p = -(W > H ? W : H) - T
-//        while p <= W {
-//            
-//            c.move( to: CGPoint(x: p-T, y: -T) )
-//            c.addLine( to: CGPoint(x: p+T+H, y: T+H) )
-//            c.strokePath()
-//            p += G + T + T
-//        }
-//    }
-//}
-
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {
        assert(red >= 0 && red <= 255, "Invalid red component")
@@ -106,13 +82,18 @@ class StripesView: UIView {
 }
 
 struct StripeProgressBar: UIViewRepresentable {
-    @Binding var progress: Float
+    var elapsedTime: TimeInterval
+    var workoutDuration: TimeInterval
     var progressColor: UIColor
     var trackColor: UIColor
     var barHeight: CGFloat
     var stripeColor: UIColor
     var strokeColor: UIColor
-    
+
+    private var progress: Float {
+        return Float(elapsedTime / workoutDuration)
+    }
+
     func makeUIView(context: Context) -> UIView {
         // Create a container view
         let containerView = UIView()
@@ -136,7 +117,6 @@ struct StripeProgressBar: UIViewRepresentable {
         progressView.layer.borderColor = strokeColor.cgColor
         progressView.layer.borderWidth = 1.5
         
-        
         let stripesView = StripesView(frame: CGRect(x: 0, y: 0, width: 500, height: barHeight))
         stripesView.backgroundColor = progressColor
         stripesView.strokeColor = stripeColor.cgColor
@@ -158,41 +138,7 @@ struct StripeProgressBar: UIViewRepresentable {
         // Access the progress view and update its progress value
         if let progressView = uiView.subviews.first as? UIProgressView {
             progressView.progress = progress
-//            progressView.subviews[1].subviews[0].frame = CGRect(x: 0, y: 0, width: progressView.subviews[1].frame.width, height: barHeight)
         }
     }
 }
 
-struct PBTestView: View {
-    @State private var progress: Float = 0.9 // Initial progress
-    
-    var body: some View {
-        VStack {
-            // SwiftUI Text for displaying current progress
-            Text("Progress: \(Int(progress * 100))%")
-                .font(.headline)
-            
-            // Custom ProgressBar using UIProgressView wrapped in SwiftUI
-            StripeProgressBar(progress: $progress, progressColor: UIColor.green, trackColor: UIColor.systemGray6, barHeight: 50.0, stripeColor: UIColor.freshGreen, strokeColor: UIColor(rgb: 0x30C530))
-                .frame(height: 40)
-                .padding()
-            
-            // Slider to control progress value
-            Slider(value: $progress, in: 0...1)
-                .padding()
-            
-            Button("Increase Progress") {
-                // Increase progress value by 0.1
-                if progress < 1.0 {
-                    progress += 0.1
-                }
-            }
-            .padding()
-        }
-        .padding()
-    }
-}
-
-#Preview {
-    PBTestView()
-}

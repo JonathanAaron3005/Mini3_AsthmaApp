@@ -11,57 +11,82 @@ import HealthKit
 
 struct ControlsView: View {
     private var workoutManager = WorkoutManager.shared
+    @State private var showIndicatorIphone = false
     
     var body: some View {
         VStack {
-            Button {
-                workoutManager.session?.state == .running ? workoutManager.session?.pause() : workoutManager.session?.resume()
-            } label: {
-                let title = workoutManager.session?.state == .running ? "Pause" : "Resume"
-                let systemImage = workoutManager.session?.state == .running ? "pause" : "play"
-                HStack{
-                    Image(systemName: systemImage)
-                    Text(title)
-                }
-            }
-            .disabled(!workoutManager.sessionState.isActive)
-            .tint(.blue)
-            
-            Button {
-                switch workoutManager.currentPhase {
-                case .warmup:
-                    Task {
-                        do {
-                            workoutManager.session?.stopActivity(with: .now)
-                            let configuration = HKWorkoutConfiguration()
-                            configuration.activityType = workoutManager.selectedWorkout ?? .swimming
-                            configuration.locationType = .outdoor
-                            try await workoutManager.startWorkout(workoutConfiguration: configuration)
-                        } catch {
-                            Logger.shared.log("Failed started workout")
+            if showIndicatorIphone {
+                IndicatorIphone()
+            } else {
+                VStack(spacing: 20) {
+                    Button {
+                        workoutManager.session?.state == .running ? workoutManager.session?.pause() : workoutManager.session?.resume()
+                    } label: {
+                        let title = workoutManager.sessionState == .running ? "Pause" : "Resume"
+                        let systemImage = workoutManager.sessionState == .running ? "pause.circle.fill" : "play.circle.fill"
+                        VStack {
+                            Image(systemName: systemImage)
+                                .resizable()
+                                .frame(width: 64, height: 64)
+                                .foregroundColor(.white)
+                            Text(title)
+                                .font(.headline)
+                                .foregroundColor(.white)
                         }
                     }
-                case .workout:
-                    Task {
-                        do {
+                    .buttonStyle(.plain)
+                    .disabled(!workoutManager.sessionState.isActive)
+                    .tint(.blue)
+                    
+                    Button {
+                        switch workoutManager.currentPhase {
+                        case .warmup:
+                            Task {
+                                do {
+                                    workoutManager.session?.stopActivity(with: .now)
+                                    let configuration = HKWorkoutConfiguration()
+                                    configuration.activityType = workoutManager.selectedWorkout ?? .swimming
+                                    configuration.locationType = .outdoor
+                                    try await workoutManager.startWorkout(workoutConfiguration: configuration)
+                                } catch {
+                                    Logger.shared.log("Failed started workout")
+                                }
+                            }
+                        case .workout:
+                            Task {
+                                do {
+                                    workoutManager.session?.stopActivity(with: .now)
+                                    let configuration = HKWorkoutConfiguration()
+                                    configuration.activityType = .cooldown
+                                    configuration.locationType = .outdoor
+                                    try await workoutManager.startWorkout(workoutConfiguration: configuration)
+                                } catch {
+                                    Logger.shared.log("Failed started cooldown")
+                                }
+                            }
+                        case .cooldown:
                             workoutManager.session?.stopActivity(with: .now)
-                            let configuration = HKWorkoutConfiguration()
-                            configuration.activityType = .cooldown
-                            configuration.locationType = .outdoor
-                            try await workoutManager.startWorkout(workoutConfiguration: configuration)
-                        } catch {
-                            Logger.shared.log("Failed started cooldown")
+                            showIndicatorIphone = true
+                        }
+                    } label: {
+                        VStack {
+                            Image(systemName: "flag.checkered.circle.fill") // Finish flag icon
+                                .resizable()
+                                .frame(width: 64, height: 64)
+                                .foregroundColor(Color(hex: "#CEF74A"))
+                            Text("Finish")
+                                .font(.headline)
+                                .foregroundColor(Color(hex: "#CEF74A"))
                         }
                     }
-                case .cooldown:
-                    workoutManager.session?.stopActivity(with: .now)
+                    .padding([.top, .bottom], 4 )
+                    .buttonStyle(.plain)
+                    .tint(.red)
+                    .disabled(!workoutManager.sessionState.isActive)
                 }
-            } label: {
-                Text("End")
+                .padding()
+                .padding([.top, .bottom], 10)
             }
-            .tint(.red)
-            .disabled(!workoutManager.sessionState.isActive)
         }
     }
 }
-

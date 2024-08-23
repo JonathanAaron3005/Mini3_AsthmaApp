@@ -10,17 +10,32 @@ import SwiftUI
 struct ContentView: View {
     private var workoutManager = WorkoutManager.shared
     @Environment(\.isLuminanceReduced) var isLuminanceReduced
+    @State private var isStartedFromPhone = AppConfig.isStartedFromPhone
     @State private var selection: Tab = .metrics
     @State private var isSheetActive = false
-
+    
     private enum Tab {
-        case controls, metrics
+        case controls, metrics, guidence
     }
-
+    
     var body: some View {
-        TabView(selection: $selection) {
-            ControlsView().tag(Tab.controls)
-            MetricsView().tag(Tab.metrics)
+        NavigationStack {
+            TabView(selection: $selection) {
+                if !isStartedFromPhone {
+                    IndicatorIphone()
+                }
+
+                    
+                else {
+                        ControlsView().tag(Tab.controls)
+                        MetricsView().tag(Tab.metrics)
+                        GuidenceBT().tag(Tab.guidence)
+                    
+                }
+                
+                
+            }
+            .background(Color(hex:"#18293C"))
         }
         .navigationTitle("\(workoutManager.selectedWorkout?.name ?? "Working Out")")
         .navigationBarBackButtonHidden(true)
@@ -38,6 +53,9 @@ struct ContentView: View {
         .onAppear {
             workoutManager.requestAuthorization()
             selection = .metrics
+            NotificationCenter.default.addObserver(forName: .workoutStartedFromPhone, object: nil, queue: .main) { _ in
+                self.isStartedFromPhone = true
+            }
         }
         .sheet(isPresented: $isSheetActive) {
             workoutManager.resetWorkout()
@@ -45,10 +63,10 @@ struct ContentView: View {
             SummaryView()
         }
     }
-
+    
     private func displayMetricsView() {
         //withAnimation {
-            selection = .metrics
+        selection = .metrics
         //}
     }
 }

@@ -15,17 +15,23 @@ class WorkoutManager: NSObject, ObservableObject {
         let newState: HKWorkoutSessionState
         let date: Date
     }
-    var selectedWorkout: HKWorkoutActivityType?
+    @Published var selectedWorkout: HKWorkoutActivityType?
     /**
      The workout session live states that the UI observes.
      */
     @Published var sessionState: HKWorkoutSessionState = .notStarted
+    @Published var isMediumHR: Bool = false
     @Published var heartRate: Double = 0 {
         didSet {
-            if (heartRate >= 70) {
+            if heartRate > 140  {
                 isAboveHRMax = true
+                isMediumHR = false
+            } else if heartRate >= 100 && heartRate <= 140 {
+                isMediumHR = true
+                isAboveHRMax = false
             } else {
                 isAboveHRMax = false
+                isMediumHR = false
             }
         }
     }
@@ -38,7 +44,7 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var distance: Double = 0
     @Published var water: Double = 0
     @Published var elapsedTimeInterval: TimeInterval = 0
-    @Published var workoutDuration: Int = 30
+    @Published var workoutDuration: Int = 1800
     @Published var currentPhase: WorkoutPhase = .warmup
     /**
      SummaryView (watchOS) changes from Saving Workout to the metric summary view when
