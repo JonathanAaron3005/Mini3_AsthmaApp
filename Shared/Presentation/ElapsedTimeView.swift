@@ -11,18 +11,22 @@ struct ElapsedTimeView: View {
     var elapsedTime: TimeInterval = 0
     var workoutDuration: TimeInterval
     var showSubseconds = true
+    var showWorkoutDuration: Bool = false // New flag to control visibility of workout duration
+    
     @State private var timeFormatter = ElapsedTimeFormatter()
     
     var body: some View {
         VStack {
-            ProgressView(value: elapsedTime, total: workoutDuration)
-                .progressViewStyle(LinearProgressViewStyle(tint: progressBarColor))
-                .padding()
+            if showWorkoutDuration {
+                ProgressView(value: elapsedTime, total: workoutDuration)
+                    .progressViewStyle(LinearProgressViewStyle(tint: progressBarColor))
+                    .padding()
+            }
             
             Text(NSNumber(value: elapsedTime), formatter: timeFormatter)
                 .fontWeight(.semibold)
-                .onChange(of: showSubseconds) { (oldValue, newValue) in
-                    timeFormatter.showSubseconds = newValue
+                .onAppear {
+                    timeFormatter.showSubseconds = showSubseconds // This should be false for watch
                 }
         }
     }
@@ -37,14 +41,26 @@ struct ElapsedTimeView: View {
     }
 }
 
+// Function to determine if the app is running on iPhone
+private func isRunningOniPhone() -> Bool {
+#if os(iOS)
+    return true
+#else
+    return false
+#endif
+}
+
+
 class ElapsedTimeFormatter: Formatter {
     let componentsFormatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = [.minute, .second]
         formatter.zeroFormattingBehavior = .pad
+        formatter.unitsStyle = .positional
         return formatter
     }()
-    var showSubseconds = true
+    
+    var showSubseconds = false
     
     override func string(for value: Any?) -> String? {
         guard let time = value as? TimeInterval else {

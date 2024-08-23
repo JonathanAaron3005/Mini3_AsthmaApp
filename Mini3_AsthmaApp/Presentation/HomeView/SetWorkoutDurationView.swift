@@ -15,7 +15,7 @@ struct SetWorkoutDurationView: View {
         VStack {
             HStack {
                 Button(action: {
-                    viewModel.workoutDuration = 30
+                    viewModel.workoutDuration = 1800
                     dismiss()
                 }) {
                     Text("Cancel")
@@ -48,14 +48,14 @@ struct SetWorkoutDurationView: View {
             Spacer()
             
             VStack(spacing: 20) {
-                Text("\(viewModel.workoutDuration) minutes")
+                Text("\(viewModel.workoutDuration / 60) minutes")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 
                 HStack {
                     Button(action: {
-                        if viewModel.workoutDuration > 5 {
-                            viewModel.workoutDuration -= 5
+                        if viewModel.workoutDuration > 300 {
+                            viewModel.workoutDuration -= 300
                         }
                     }) {
                         Image(systemName: "minus.circle")
@@ -67,7 +67,7 @@ struct SetWorkoutDurationView: View {
                     Spacer()
                     
                     Button(action: {
-                        viewModel.workoutDuration += 5
+                        viewModel.workoutDuration += 300
                     }) {
                         Image(systemName: "plus.circle")
                             .resizable()

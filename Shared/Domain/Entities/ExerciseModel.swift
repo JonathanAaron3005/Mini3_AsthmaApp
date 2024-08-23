@@ -21,6 +21,8 @@ enum ExerciseType: String, Codable, Identifiable{
     case walking
     case outdoorCycling
     case indoorCycling
+    case cooldown
+    case preparationAndRecovery
     
     var id: String {
         self.rawValue
@@ -38,6 +40,10 @@ enum ExerciseType: String, Codable, Identifiable{
             return .cycling
         case .indoorCycling:
             return .cycling
+        case .cooldown:
+            return .cooldown
+        case .preparationAndRecovery:
+            return .preparationAndRecovery
         }
     }
     
@@ -53,11 +59,15 @@ enum ExerciseType: String, Codable, Identifiable{
             return "Indoor_Cycling"
         case .outdoorCycling:
             return "Outdoor_Cycling"
+        case .cooldown:
+            return ""
+        case .preparationAndRecovery:
+            return ""
         }
     }
     
     var description: String {
-        switch self{
+        switch self {
         case .swimming:
             return "Low risk, low intensity"
         case .running:
@@ -68,6 +78,10 @@ enum ExerciseType: String, Codable, Identifiable{
             return "Medium risk, mixed intensity"
         case .outdoorCycling:
             return "Medium risk, mixed intensity"
+        case .cooldown:
+            return ""
+        case .preparationAndRecovery:
+            return ""
         }
     }
     
@@ -83,6 +97,10 @@ enum ExerciseType: String, Codable, Identifiable{
             return "Indoor Cycling"
         case .outdoorCycling:
             return "Outdoor Cycling"
+        case .cooldown:
+            return "Cool Down"
+        case .preparationAndRecovery:
+            return "Warmin' Up"
         }
     }
     
@@ -98,6 +116,10 @@ enum ExerciseType: String, Codable, Identifiable{
             return "figure.outdoor.cycle"
         case .outdoorCycling:
             return "figure.indoor.cycle"
+        case .cooldown:
+            return "figure.strengthtraining.functional"
+        case .preparationAndRecovery:
+            return "figure.cooldown"
         }
     }
     
@@ -113,6 +135,10 @@ enum ExerciseType: String, Codable, Identifiable{
             return "BreatheeeCoral"
         case .outdoorCycling:
             return "BreatheeeRed"
+        case .cooldown:
+            return ""
+        case .preparationAndRecovery:
+            return ""
         }
     }
     
@@ -127,6 +153,10 @@ enum ExerciseType: String, Codable, Identifiable{
         case .indoorCycling:
             return ""
         case .outdoorCycling:
+            return ""
+        case .cooldown:
+            return ""
+        case .preparationAndRecovery:
             return ""
         }
     }
@@ -144,7 +174,7 @@ extension HKWorkoutActivityType: Identifiable {
         case .cycling:
             return "Bike"
         case .walking:
-            return "Walk"
+            return "Walk" 
         case .swimming:
             return "Swimming"
         default:
@@ -161,7 +191,11 @@ extension HKWorkoutActivityType: Identifiable {
         case .walking:
             return .walking
         case .cycling:
-            return .outdoorCycling // Anda dapat memutuskan apakah ini indoor atau outdoor
+            return .outdoorCycling
+        case .preparationAndRecovery:
+            return .preparationAndRecovery
+        case .cooldown:
+            return .cooldown
         default:
             return nil
         }
@@ -175,8 +209,8 @@ enum WorkoutPhase {
     
     var duration: Int {
         switch self {
-        case .warmup, .cooldown: return 5
-        case .workout: return 30
+        case .warmup, .cooldown: return 60
+        case .workout: return 1800
         }
     }
     

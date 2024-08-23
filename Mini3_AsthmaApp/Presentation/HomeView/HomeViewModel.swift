@@ -18,7 +18,7 @@ class HomeViewModel: ObservableObject {
     
     @Published var selectedWorkout: ExerciseType?
     @Published var errorMessage: String?
-    @Published var workoutDuration = 30 {
+    @Published var workoutDuration = 1800 {
         @MainActor didSet {
             workoutManager.workoutDuration = workoutDuration
         }

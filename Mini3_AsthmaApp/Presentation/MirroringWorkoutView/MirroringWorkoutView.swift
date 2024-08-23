@@ -43,8 +43,14 @@ struct MirroringWorkoutView: View {
                             
                             metricsView(viewModel: viewModel)
                             
-                            ElapsedTimeView(elapsedTime: workoutTimeInterval(context.date), workoutDuration: isWorkoutPhase ?  TimeInterval(viewModel.workoutManager.workoutDuration) : TimeInterval(viewModel.workoutManager.currentPhase.duration), showSubseconds: context.cadence == .live)
-                                .font(.system(.title, design: .rounded).monospacedDigit().lowercaseSmallCaps())
+                            
+                            StripeProgressBar(elapsedTime: workoutTimeInterval(context.date), workoutDuration: isWorkoutPhase ? TimeInterval(viewModel.workoutManager.workoutDuration) : TimeInterval(viewModel.workoutManager.currentPhase.duration), progressColor: UIColor.green, trackColor: UIColor.systemGray6, barHeight: 50.0, stripeColor: UIColor.freshGreen, strokeColor: UIColor(rgb: 0x30C530))
+                                .frame(height: 40)
+                                .padding()
+                                .overlay(alignment: .center){
+                                    ElapsedTimeView(elapsedTime: workoutTimeInterval(context.date), workoutDuration: isWorkoutPhase ?  TimeInterval(viewModel.workoutManager.workoutDuration) : TimeInterval(viewModel.workoutManager.currentPhase.duration), showSubseconds: context.cadence == .live)
+                                        .font(.system(.title, design: .rounded).monospacedDigit().lowercaseSmallCaps())
+                                }
                            
                             Rectangle()
                                 .frame(maxWidth: .infinity, maxHeight: 0.7)
