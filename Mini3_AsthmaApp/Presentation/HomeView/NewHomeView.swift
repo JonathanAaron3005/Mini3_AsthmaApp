@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct NewHomeView: View {
-    var viewModel = HomeViewModel(exerciseUseCase: DefaultExerciseUseCase(exerciseRepo: LocalExerciseRepository()))
+    var viewModel = HomeViewModel(
+        exerciseUseCase: DefaultExerciseUseCase(exerciseRepo: LocalExerciseRepository()),
+        userUseCase: DefaultUserUseCase(userRepo: LocalUserRepository())
+    )
     let rows = [GridItem(), GridItem(),GridItem()]
     
     @State private var selectedExercise: ExerciseType?

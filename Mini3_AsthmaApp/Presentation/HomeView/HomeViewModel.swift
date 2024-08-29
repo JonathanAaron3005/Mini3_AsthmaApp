@@ -15,6 +15,7 @@ class HomeViewModel: ObservableObject {
     
     
     private let exerciseUseCase: ExerciseUseCase
+    private let userUseCase: UserUseCase
     
     @Published var selectedWorkout: ExerciseType?
     @Published var errorMessage: String?
@@ -24,8 +25,9 @@ class HomeViewModel: ObservableObject {
         }
     }
     
-    init(exerciseUseCase: ExerciseUseCase) {
+    init(exerciseUseCase: ExerciseUseCase, userUseCase: UserUseCase) {
         self.exerciseUseCase = exerciseUseCase
+        self.userUseCase = userUseCase
     }
     
     @MainActor func setSelectedExercise(exerciseType: ExerciseType){
@@ -38,7 +40,9 @@ class HomeViewModel: ObservableObject {
     }
     
     func getRecommendedWorkoutTypes() -> [ExerciseType] {
-        return exerciseUseCase.getRecommendedWorkoutTypes()
+        let user = userUseCase.getUser()
+        print(user)
+        return exerciseUseCase.getRecommendedWorkoutTypes(for: user)
     }
     
     func startWarmup() {

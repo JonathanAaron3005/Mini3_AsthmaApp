@@ -1196,7 +1196,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = SMF997D256;
+				DEVELOPMENT_TEAM = Z42WC948D7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mini3-AsthmaApp-Watch-App-Info.plist";
@@ -1205,13 +1205,13 @@
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "kevin.Mini3-AsthmaApp";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jonathan.Mini3-AsthmaApp";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp.Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1233,7 +1233,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = SMF997D256;
+				DEVELOPMENT_TEAM = Z42WC948D7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mini3-AsthmaApp-Watch-App-Info.plist";
@@ -1242,13 +1242,13 @@
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "kevin.Mini3-AsthmaApp";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "jonathan.Mini3-AsthmaApp";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp.Watch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1272,7 +1272,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp/Preview Content\"";
-				DEVELOPMENT_TEAM = SMF997D256;
+				DEVELOPMENT_TEAM = Z42WC948D7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
@@ -1290,7 +1290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1311,7 +1311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini3_AsthmaApp/Preview Content\"";
-				DEVELOPMENT_TEAM = SMF997D256;
+				DEVELOPMENT_TEAM = Z42WC948D7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Mini3_AsthmaApp;
@@ -1329,7 +1329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kevin.Mini3-AsthmaApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "jonathan.Mini3-AsthmaApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1347,7 +1347,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SMF997D256;
+				DEVELOPMENT_TEAM = Z42WC948D7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";
@@ -1371,7 +1371,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SMF997D256;
+				DEVELOPMENT_TEAM = Z42WC948D7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "This app would like to access your health data";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data";

@@ -9,6 +9,7 @@ import Foundation
 
 internal protocol UserUseCase {
     func saveUser(dob: Date, severity: SeverityLevel?, totalScore: Int?, isUsingInhaler: Bool, HRMax: Double?)
+    func getUser() -> UserModel
     func calculateActScore(totalScore: Int) -> ACTScore?
     func calculateHRMax(age: Int) -> Double
 }
@@ -38,6 +39,10 @@ internal final class DefaultUserUseCase: UserUseCase {
         let userModel = UserModel(id: UUID().uuidString, age: age, HRmax: finalHRMax, isUsingInhaler: isUsingInhaler, severityLevel: severity, asthmaControl: actScore)
         
         userRepo.save(user: userModel)
+    }
+    
+    func getUser() -> UserModel {
+        return userRepo.fetch()
     }
     
     func calculateActScore(totalScore: Int) -> ACTScore? {
